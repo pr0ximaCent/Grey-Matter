@@ -34,53 +34,54 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm bg-n-8/90 backdrop-blur-sm">
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <div className="flex items-center">
-            <img src={greymatter} width={60} height={40} alt="Grey Matter" />
-            <span className="ml-1 text-n-1">Grey Matter</span>
-          </div>
+    <div className="fixed top-0 left-0 w-full z-50 bg-gray-900 shadow-md">
+      <div className="flex items-center justify-between px-4 lg:px-8 py-3 max-w-screen-xl mx-auto">
+        <a className="flex items-center" href="#hero">
+          <img src={greymatter} width={60} height={40} alt="Grey Matter" />
+          <span className="ml-2 text-white text-lg font-semibold">Grey Matter</span>
         </a>
 
-        <nav className="hidden lg:flex lg:mx-auto">
-          <div className="flex flex-col items-center justify-center lg:flex-row">
-            {navigation.map((elem) => (
-              <a
-                key={elem.id}
-                href={elem.url}
-                onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
-                  elem.url === pathname.hash ? "text-n-1" : "text-n-1/50"
-                } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-              >
-                {elem.title}
-              </a>
-            ))}
-          </div>
-
-          <HamburgerMenu />
+        <nav className="hidden lg:flex space-x-4">
+          {navigation.map((elem) => (
+            <a
+              key={elem.id}
+              href={elem.url}
+              onClick={handleClick}
+              className={`text-gray-300 hover:text-white transition-colors duration-300 py-2 px-3 text-xs font-medium uppercase ${
+                elem.url === pathname.hash ? "text-white" : ""
+              }`}
+            >
+              {elem.title}
+            </a>
+          ))}
         </nav>
 
-        <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-          onClick={handleSignupOpen}
-        >
-          Sign Up
-        </a>
+        <div className="flex space-x-3 items-center">
+          <a
+            href="#signup"
+            className="text-gray-300 hover:text-white transition-colors duration-300 py-2 px-3 text-xs font-medium uppercase"
+            onClick={handleSignupOpen}
+          >
+            Sign Up
+          </a>
 
-        <a
-          href="#signin"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-          onClick={handleLoginOpen}
-        >
-          Sign In
-        </a>
+          <a
+            href="#signin"
+            className="text-gray-300 hover:text-white transition-colors duration-300 py-2 px-3 text-xs font-medium uppercase"
+            onClick={handleLoginOpen}
+          >
+            Sign In
+          </a>
 
-        <Button className="lg:flex h-8" href="#login">
-          Join!
-        </Button>
+          <Button
+            href="#login"
+            className="text-xs font-medium py-1 px-2 hover:from-white hover:to-lightBlue-400"
+          >
+            Join!
+          </Button>
+        </div>
+
+        <HamburgerMenu />
       </div>
 
       <SignUpModal open={signupOpen} onClose={handleSignupClose} />

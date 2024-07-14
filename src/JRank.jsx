@@ -7,13 +7,14 @@ import Header from "./components/Header.jsx";
 
 // Example data, replace with your actual data source
 const data = [
+
   {
-    Rank: "1",
-    Sourceid: "28773",
-    Title: "Ca-A Cancer Journal for Clinicians",
-    Type: "journal",
-    Issn: "15424863, 00079235",
-    SJR: "106,094",
+    "Rank": "1",
+    "Sourceid": "28773",
+    "Title": "Ca-A Cancer Journal for Clinicians",
+    "Type": "journal",
+    "Issn": "15424863, 00079235",
+    "SJR": "106,094",
     "SJR Best Quartile": "Q1",
     "H index": "211",
     "Total Docs. (2023)": "49",
@@ -24,14 +25,14 @@ const data = [
     "Cites / Doc. (2years)": "381,89",
     "Ref. / Doc.": "98,86",
     "%Female": "43,95",
-    Overton: "2",
-    SDG: "35",
-    Country: "United States",
-    Region: "Northern America",
-    Publisher: "Wiley-Blackwell",
-    Coverage: "1950-2023",
-    Categories: "Hematology (Q1); Oncology (Q1)",
-    Areas: "Medicine",
+    "Overton": "2",
+    "SDG": "35",
+    "Country": "United States",
+    "Region": "Northern America",
+    "Publisher": "Wiley-Blackwell",
+    "Coverage": "1950-2023",
+    "Categories": "Hematology (Q1); Oncology (Q1)",
+    "Areas": "Medicine"
   },
   // Add more data objects as needed
 ];

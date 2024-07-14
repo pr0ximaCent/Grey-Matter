@@ -1,4 +1,5 @@
 import { robot } from "../assets";
+import { robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine} from "./design/Hero";
@@ -48,6 +49,15 @@ const Hero = () => {
 
             
           </div>
+          {/* <div className="absolute -top-[54%] left-0 right-0 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+            <img
+              src={heroBackground}
+              className="w-full"
+              width={1440}
+              height={1800}
+              alt="hero"
+            />
+          </div> */}
 
           <BackgroundCircles />
         </div>

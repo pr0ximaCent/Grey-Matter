@@ -7,7 +7,6 @@ import Roadmap from "./components/Roadmap";
 // import Services from "./components/Services";
 import Footer from "./components/Footer";
 import "@fortawesome/fontawesome-free/css/all.css";
-import JRank from "./JRank";
 
 const App = () => {
   return (
@@ -17,10 +16,6 @@ const App = () => {
         <Hero />
         <Roadmap />
         <Benefits />
-        {/* <Collaboration />
-        <Services /> */}
-        <JRank />
-        <Roadmap />
         <Footer />
       </div>
 

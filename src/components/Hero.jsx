@@ -1,10 +1,11 @@
-import { heroBackground, robot } from "../assets";
+import { robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { BackgroundCircles, BottomLine} from "./design/Hero";
 import { useRef } from "react";
 import Generating from "./Generating";
 import CompanyLogos from "./CompanyLogos";
+
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -26,7 +27,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-1 lg:mb-8">
             First and only Research Collab Of Bangladesh in One place!
           </p>
-          <Button href="/login" white >
+          <Button href="/login" white>
             Get started
           </Button>
         </div>
@@ -45,16 +46,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <Gradient />
-          </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-            <img
-              src={heroBackground}
-              className="w-full"
-              width={1440}
-              height={1800}
-              alt="hero"
-            />
+            
           </div>
 
           <BackgroundCircles />

@@ -21,8 +21,12 @@
   body {
     font-family: "Sora", sans-serif;
     /* Set your preferred font family */
-    background-color: #111827;
-    /* Adjust the hex code to your desired shade */
+    background: linear-gradient(180deg,
+        #111827 0%,
+        #13274A 50%,
+        #13274A 70%,
+        #2C3C6D 100%);
+    /* Gradient background from #111827 to a lighter shade */
     color: #d6cb65;
     /* Set your preferred text color */
     scroll-behavior: smooth;

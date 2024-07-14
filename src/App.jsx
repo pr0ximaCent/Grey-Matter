@@ -19,10 +19,13 @@ const App = () => {
         <Benefits />
         <Collaboration />
         <Services />
+<<<<<<< HEAD
         <JRank />
+=======
+        <Roadmap />
+>>>>>>> 852df3fb33ffa90b3dae8876f6958436c4ee4fb6
         <Footer />
       </div>
-
       <ButtonGradient />
     </>
   );

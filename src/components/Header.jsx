@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm bg-n-8/90 backdrop-blur-sm">
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <a className="block w-[12rem] xl:mr-8" href="/">
           <div className="flex items-center">
             <img src={greymatter} width={60} height={40} alt="Grey Matter" />
             <span className="ml-1 text-n-1">Grey Matter</span>
@@ -63,7 +63,7 @@ const Header = () => {
         </nav>
 
         <a
-          href="#signup"
+          href="signup"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
           onClick={handleSignupOpen}
         >
@@ -71,14 +71,14 @@ const Header = () => {
         </a>
 
         <a
-          href="#signin"
+          href="signin"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
           onClick={handleLoginOpen}
         >
           Sign In
         </a>
 
-        <Button className="lg:flex h-8" href="#login">
+        <Button className="lg:flex h-8" href="login">
           Join!
         </Button>
       </div>

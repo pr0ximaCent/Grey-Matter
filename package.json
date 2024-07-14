@@ -22,8 +22,12 @@
     "react-just-parallax": "^3.1.16",
     "react-modal": "^3.16.1",
     "react-responsive-modal": "^6.4.2",
+<<<<<<< HEAD
     "react-router-dom": "^6.22.1",
     "react-vertical-timeline-component": "^3.6.0",
+=======
+    "react-router-dom": "^6.24.1",
+>>>>>>> 852df3fb33ffa90b3dae8876f6958436c4ee4fb6
     "scroll-lock": "^2.1.5"
   },
   "devDependencies": {

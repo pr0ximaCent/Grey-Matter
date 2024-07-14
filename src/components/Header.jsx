@@ -1,12 +1,13 @@
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
-import { greymatter } from "../assets";
-import { navigation } from "../constants";
-import Button from "./Button";
-import { HamburgerMenu } from "./design/Header";
-import SignUpModal from "./SignupModal";
-import SignInModal from "./SigninModal";
-import "react-responsive-modal/styles.css";
+import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { greymatter } from '../assets';
+import { navigation } from '../constants';
+import Button from './Button';
+import { HamburgerMenu } from './design/Header';
+
+import 'react-responsive-modal/styles.css';
+import SignUpModal from './SignupModal';
+import SignInModal from './SigninModal'; // Ensure the correct file name
 
 const Header = () => {
   const pathname = useLocation();
@@ -29,10 +30,6 @@ const Header = () => {
     setLoginOpen(false);
   };
 
-  const handleClick = () => {
-    // Handle any click events if needed
-  };
-
   return (
     <div className="fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm bg-n-8/90 backdrop-blur-sm">
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
@@ -49,16 +46,14 @@ const Header = () => {
               <a
                 key={elem.id}
                 href={elem.url}
-                onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
-                  elem.url === pathname.hash ? "text-n-1" : "text-n-1/50"
+                  elem.url === pathname.hash ? 'text-n-1' : 'text-n-1/50'
                 } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
               >
                 {elem.title}
               </a>
             ))}
           </div>
-
           <HamburgerMenu />
         </nav>
 
@@ -84,7 +79,7 @@ const Header = () => {
       </div>
 
       <SignUpModal open={signupOpen} onClose={handleSignupClose} />
-      <SignInModal open={loginOpen} onClose={handleLoginClose} />
+      <SignInModal open={loginOpen} onClose={handleLoginClose} /> {/* Ensure correct component */}
     </div>
   );
 };

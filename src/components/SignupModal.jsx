@@ -1,98 +1,99 @@
-
-import { Dialog, DialogContent, TextField, IconButton, Typography, Box, Stack } from '@mui/material';
-import { MailOutline, LockOutlined, Google, Apple } from '@mui/icons-material';
-import Button from './Button'; // Adjust the import path as needed
+import Modal from "react-responsive-modal";
+import "react-responsive-modal/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 
 const SignUpModal = ({ open, onClose }) => {
   return (
-    <Dialog open={open} onClose={onClose} maxWidth="xs" fullWidth>
-      <DialogContent sx={{ bgcolor: '#1e1e1e', borderRadius: 2, p: 3 }}>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: 2,
-            color: '#fff',
-            borderRadius: 2,
-            p: 2,
-            bgcolor: '#1e1e1e',
-            boxShadow: 3,
-          }}
+    <Modal
+      open={open}
+      onClose={onClose}
+      center
+      classNames={{ modal: "customModal", overlay: "customOverlay" }}
+      styles={{
+        modal: {
+          maxWidth: "600px", // Adjust maximum width as needed
+          maxHeight: "80vh", // Adjust maximum height as needed
+          backgroundColor: "#1a202c", // Dark background color
+          color: "#ffffff", // Text color
+          padding: "20px",
+          position: "relative", // Ensure the modal respects its content's height
+        },
+      }}
+      overlayClassName="customOverlay"
+    >
+      <div className="p-6">
+        <h2
+          className="text-2xl font-bold mb-4"
+          style={{ color: "white", textAlign: "center" }}
         >
-          <Stack direction="row" alignItems="center" spacing={1} sx={{ width: '100%' }}>
-            <MailOutline sx={{ color: '#ccc' }} />
-            <TextField
-              variant="outlined"
-              placeholder="Name"
-              fullWidth
-              InputProps={{
-                style: { color: '#fff' },
-                sx: {
-                  '& .MuiOutlinedInput-notchedOutline': {
-                    borderColor: '#444',
-                  },
-                },
-              }}
-            />
-          </Stack>
+          Get Started Absolutely Free!
+        </h2>
 
-          <Stack direction="row" alignItems="center" spacing={1} sx={{ width: '100%' }}>
-            <MailOutline sx={{ color: '#ccc' }} />
-            <TextField
-              variant="outlined"
-              placeholder="Email"
-              fullWidth
-              InputProps={{
-                style: { color: '#fff' },
-                sx: {
-                  '& .MuiOutlinedInput-notchedOutline': {
-                    borderColor: '#444',
-                  },
-                },
-              }}
+        <span className="text-gray-400 text-sm mb-6 block" style={{ color: "white", textAlign: "center" }}>
+          No credit card needed
+        </span>
+        <form className="space-y-6">
+          {" "}
+          {/* Increased vertical spacing */}
+          <div className="relative mb-6">
+            {" "}
+            {/* Increased margin-bottom */}
+            <FontAwesomeIcon
+              icon={faUser}
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
             />
-          </Stack>
-
-          <Stack direction="row" alignItems="center" spacing={1} sx={{ width: '100%' }}>
-            <LockOutlined sx={{ color: '#ccc' }} />
-            <TextField
-              variant="outlined"
-              placeholder="Password"
+            <input
+              className="w-full border border-gray-700 rounded-md py-2 px-10 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="First Name"
+              required
+              autoComplete="off"
+              aria-required="true"
+            />
+          </div>
+          <div className="relative mb-6">
+            {" "}
+            {/* Increased margin-bottom */}
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+            />
+            <input
+              className="w-full border border-gray-700 rounded-md py-2 px-10 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+              autoComplete="off"
+              aria-required="true"
+            />
+          </div>
+          <div className="relative mb-6">
+            {" "}
+            {/* Increased margin-bottom */}
+            <FontAwesomeIcon
+              icon={faLock}
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+            />
+            <input
               type="password"
-              fullWidth
-              InputProps={{
-                style: { color: '#fff' },
-                sx: {
-                  '& .MuiOutlinedInput-notchedOutline': {
-                    borderColor: '#444',
-                  },
-                },
-              }}
+              name="pass"
+              className="w-full border border-gray-700 rounded-md py-2 px-10 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              placeholder="Password"
+              required
+              autoComplete="off"
+              aria-required="true"
             />
-          </Stack>
-
-          <Box sx={{ mt: 3, width: '100%' }}>
-            <Button fullWidth>
-              SIGN UP NOW
-            </Button>
-          </Box>
-
-          <Typography variant="body2" sx={{ color: '#ccc', mt: 2 }}>
-            Or start your Brainwave with
-          </Typography>
-
-          <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 1 }}>
-            <IconButton sx={{ color: '#ccc' }}>
-              <Google />
-            </IconButton>
-            <IconButton sx={{ color: '#ccc' }}>
-              <Apple />
-            </IconButton>
-          </Box>
-        </Box>
-      </DialogContent>
-    </Dialog>
+          </div>
+          <button className="w-full py-2 px-4 rounded-md text-white font-bold hover:opacity-90 bg-gradient-to-r from-purple-500 to-indigo-400 transition duration-300">
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </Modal>
   );
 };
 

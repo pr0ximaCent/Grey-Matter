@@ -40,7 +40,7 @@ export const navigation = [
   {
     id: "1",
     title: "Journal Ranking",
-    url: "#journal-ranking",
+    url: "journal-ranking",
   },
   {
     id: "2",

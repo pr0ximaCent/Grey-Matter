@@ -3,6 +3,7 @@ import JHeader from "./components/JHeader";
 import JFilter from "./components/JFilter";
 import JournalTable from "./components/JournalTable";
 import "./JRank.css";
+import Header from "./components/Header.jsx";
 
 // Example data, replace with your actual data source
 const data = [
@@ -56,6 +57,7 @@ function JRank() {
 
   return (
     <div className="App">
+      <Header />
       <JHeader />
       <JFilter applyFilters={applyFilters} />
       <JournalTable data={filteredData} />

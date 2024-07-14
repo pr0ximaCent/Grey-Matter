@@ -4,7 +4,7 @@ import { greymatter } from '../assets';
 import { navigation } from '../constants';
 import Button from './Button';
 import { HamburgerMenu } from './design/Header';
-import SignUpModal from './SignupModal'; // Make sure to import the correct modal components
+import SignUpModal from './SignupModal';
 import SignInModal from './SigninModal';
 import 'react-responsive-modal/styles.css';
 

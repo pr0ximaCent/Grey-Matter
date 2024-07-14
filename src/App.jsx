@@ -1,12 +1,11 @@
-import ButtonGradient from "./assets/svg/ButtonGradient";
-import Benefits from "./components/Benefits";
-// import Collaboration from "./components/Collaboration";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-// import Services from "./components/Services";
-import Footer from "./components/Footer";
-import "@fortawesome/fontawesome-free/css/all.css";
-
+import ButtonGradient from './assets/svg/ButtonGradient';
+import Benefits from './components/Benefits';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import ResearchRoadmap from './components/researchRoadmap';
+import Footer from './components/Footer';
+import '@fortawesome/fontawesome-free/css/all.css';
+import FAQ from './components/Faq';
 
 const App = () => {
   return (
@@ -15,6 +14,8 @@ const App = () => {
         <Header />
         <Hero />
         <Benefits />
+        <ResearchRoadmap />
+        <FAQ />
         <Footer />
       </div>
 

@@ -1,28 +1,6 @@
 const Footer = () => {
-  const footerStyle = {
-    backgroundColor: '#181f2e',
-    color: 'white',
-    padding: '2rem 0',
-  };
-
-  const hoverStyle = {
-    transition: 'color 0.3s',
-  };
-
-  const iconHoverStyle = {
-    color: '#gray-400',
-    transition: 'color 0.3s',
-  };
-
-  const borderStyle = {
-    borderTop: '1px solid #gray-800',
-    marginTop: '1.5rem',
-    paddingTop: '1rem',
-    textAlign: 'center',
-  };
-
   return (
-    <footer style={footerStyle}>
+    <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center">
           <div className="w-full md:w-1/3 mb-8 md:mb-0 text-center">
@@ -36,10 +14,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Research Profile
                 </a>
@@ -47,10 +22,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Journal Ranking
                 </a>
@@ -58,10 +30,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Research Roadmap
                 </a>
@@ -69,10 +38,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Wanna Be a Researcher?
                 </a>
@@ -85,10 +51,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Site 1
                 </a>
@@ -96,10 +59,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Site 2
                 </a>
@@ -107,10 +67,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Site 3
                 </a>
@@ -118,10 +75,7 @@ const Footer = () => {
               <li className="mb-2">
                 <a
                   href="#"
-                  className="text-sm"
-                  style={hoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
-                  onMouseLeave={(e) => (e.target.style.color = 'white')}
+                  className="text-sm hover:text-gray-400 transition duration-300"
                 >
                   Site 4
                 </a>
@@ -134,9 +88,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  style={iconHoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = 'white')}
-                  onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
+                  className="text-gray-400 hover:text-white transition duration-300"
                 >
                   <i className="fab fa-facebook-f"></i>
                 </a>
@@ -144,9 +96,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  style={iconHoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = 'white')}
-                  onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
+                  className="text-gray-400 hover:text-white transition duration-300"
                 >
                   <i className="fab fa-twitter"></i>
                 </a>
@@ -154,9 +104,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  style={iconHoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = 'white')}
-                  onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
+                  className="text-gray-400 hover:text-white transition duration-300"
                 >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
@@ -164,9 +112,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  style={iconHoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = 'white')}
-                  onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
+                  className="text-gray-400 hover:text-white transition duration-300"
                 >
                   <i className="fab fa-instagram"></i>
                 </a>
@@ -174,7 +120,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div style={borderStyle}>
+        <div className="border-t border-gray-800 mt-6 pt-4 text-center">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Grey Matter. All rights reserved.
           </p>

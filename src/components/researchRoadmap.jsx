@@ -8,21 +8,22 @@ import 'react-vertical-timeline-component/style.min.css';
 const ResearchRoadmap = () => {
   return (
     <div>
-
       <div className="text-center mt-12 mb-6">
-        <h2 className="text-2xl font-bold mb-2">Research Roadmap</h2>
-        <h3 className="text-lg text-gray-500">- Explore Research Methodologies With Us -</h3>
+        <h2 className="text-2xl font-bold mb-2 text-white">Research Roadmap</h2>
+        <h3 className="text-lg text-gray-500">
+          - Explore Research Methodologies With Us -
+        </h3>
       </div>
 
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 1"
         >
           <h2
@@ -40,11 +41,11 @@ const ResearchRoadmap = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 2"
         >
           <h2
@@ -64,11 +65,11 @@ const ResearchRoadmap = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 3"
         >
           <h2
@@ -86,11 +87,11 @@ const ResearchRoadmap = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 4"
         >
           <h2
@@ -110,11 +111,11 @@ const ResearchRoadmap = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 5"
         >
           <h2
@@ -134,11 +135,11 @@ const ResearchRoadmap = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 6"
         >
           <h2
@@ -158,11 +159,11 @@ const ResearchRoadmap = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 7"
         >
           <h2
@@ -182,11 +183,11 @@ const ResearchRoadmap = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: 'rgb(51, 51, 51)',
+            background: '#242d45',
             color: '#fff',
             boxShadow: '0 4px 8px rgba(0,0,0,0.6)',
           }}
-          contentArrowStyle={{ borderRight: '7px solid rgb(51, 51, 51)' }}
+          contentArrowStyle={{ borderRight: '7px solid #242d45' }}
           date="Step 8"
         >
           <h2

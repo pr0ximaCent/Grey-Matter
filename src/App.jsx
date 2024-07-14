@@ -20,7 +20,7 @@ const App = () => {
         {/* <Collaboration />
         <Services /> */}
         <JRank />
-        <Roadmap />
+        {/* <Roadmap /> */}
         <Footer />
       </div>
 

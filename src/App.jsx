@@ -18,11 +18,9 @@ const App = () => {
         <Benefits />
         <Collaboration />
         <Services />
-        <JRank />
         <Roadmap />
         <Footer />
       </div>
-
       <ButtonGradient />
     </>
   );

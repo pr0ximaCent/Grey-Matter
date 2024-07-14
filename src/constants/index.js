@@ -35,22 +35,22 @@ export const navigation = [
   {
     id: "0",
     title: "Reasearch Profile",
-    url: "#reasearch-profile",
+    url: "reasearch-profile",
   },
   {
     id: "1",
     title: "Journal Ranking",
-    url: "#journal-ranking",
+    url: "journal-ranking",
   },
   {
     id: "2",
     title: "Reasearch Roadmap",
-    url: "#research-roadmap",
+    url: "research-roadmap",
   },
   {
     id: "3",
     title: "Wanna Be a Researcher?",
-    url: "#wann-be-a-researcher",
+    url: "wann-be-a-researcher",
   },
 ];
 

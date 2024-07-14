@@ -8,18 +8,18 @@ const Benefits = () => {
         {benefitData.map((benefit, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
             <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col h-full">
-              <div className="flex items-center justify-between p-4 border-b">
+              <div className="flex h-36 items-center justify-between p-4 border-b">
                 <div className="flex items-center">
                   <img
                     className="w-16 h-16 rounded-full mr-4"
                     src="https://via.placeholder.com/150" // Replace with the actual image URL if available
                     alt={benefit.name}
                   />
-                  <div>
+                  <div className="">
                     <a href={benefit.profile} className="text-lg font-semibold text-blue-600 hover:underline">
                       {benefit.name}
                     </a>
-                    <p className="text-sm text-gray-800">{benefit.institution}</p>
+                    <p className="max-w-44 text-sm text-gray-800">{benefit.institution}</p>
                     <p className="text-sm text-gray-800">{benefit.country}</p>
                   </div>
                 </div>

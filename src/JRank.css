@@ -1,0 +1,17 @@
+.JRank {
+  text-align: center;
+}
+
+.MuiAppBar-root {
+  margin-bottom: 20px;
+}
+
+.MuiBox-root {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.MuiTableCell-head {
+  font-weight: bold;
+}

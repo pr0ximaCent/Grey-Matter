@@ -36,10 +36,12 @@ const Header = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-50">
       <div
-        className="bg-gradient-to-b from-navyBlue-700 to-lightBlack-800 shadow-md"
+        className="bg-gradient-to-b from-navyBlue-700 to-lightBlack-800 shadow-md hover:bg-black transition-all duration-300"
         style={{
           backdropFilter: 'blur(8px)', // Optional: Adds a blur effect behind the element
         }}
+        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#111827'}
+        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
       >
         <div className="flex items-center justify-between px-4 lg:px-8 py-3 max-w-screen-xl mx-auto">
           <a className="flex items-center" href="#hero">

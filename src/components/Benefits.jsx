@@ -10,7 +10,7 @@ const Benefits = () => {
     const fetchScholarData = async (index_number) => {
         setLoading(true);
         setStartIndex(index_number);
-        const response = await fetch(`http://4.194.212.45:3333/data/${startIndex}/${startIndex + page_containers_count - 1}`);
+        const response = await fetch(`https://beta.vectorclasses.net/data/${startIndex}/${startIndex + page_containers_count - 1}`);
         const data = await response.json();
         console.log(data);
         setScholarData(data);

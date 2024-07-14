@@ -21,15 +21,10 @@ const Benefits = () => {
                     alt={benefit.name}
                   />
                   <div className="">
-                    <a
-                      href={benefit.profile}
-                      className="text-lg font-semibold text-blue-600 hover:underline"
-                    >
+                    <a href={benefit.profile} className="text-lg font-semibold text-blue-600 hover:underline">
                       {benefit.name}
                     </a>
-                    <p className="max-w-44 text-sm text-gray-800">
-                      {benefit.institution}
-                    </p>
+                    <p className="max-w-44 text-sm text-gray-800">{benefit.institution}</p>
                     <p className="text-sm text-gray-800">{benefit.country}</p>
                   </div>
                 </div>

@@ -1,12 +1,12 @@
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
-import { greymatter } from "../assets";
-import { navigation } from "../constants";
-import Button from "./Button";
-import { HamburgerMenu } from "./design/Header";
-import SignUpModal from "./SignupModal";
-import SignInModal from "./SigninModal";
-import "react-responsive-modal/styles.css";
+import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { greymatter } from '../assets';
+import { navigation } from '../constants';
+import Button from './Button';
+import { HamburgerMenu } from './design/Header';
+import SignUpModal from './SignupModal'; // Make sure to import the correct modal components
+import SignInModal from './SigninModal';
+import 'react-responsive-modal/styles.css';
 
 const Header = () => {
   const pathname = useLocation();
@@ -51,7 +51,7 @@ const Header = () => {
                 href={elem.url}
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
-                  elem.url === pathname.hash ? "text-n-1" : "text-n-1/50"
+                  elem.url === pathname.hash ? 'text-n-1' : 'text-n-1/50'
                 } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
               >
                 {elem.title}
@@ -63,7 +63,7 @@ const Header = () => {
         </nav>
 
         <a
-          href="signup"
+          href="#"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
           onClick={handleSignupOpen}
         >
@@ -71,7 +71,7 @@ const Header = () => {
         </a>
 
         <a
-          href="signin"
+          href="#"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
           onClick={handleLoginOpen}
         >

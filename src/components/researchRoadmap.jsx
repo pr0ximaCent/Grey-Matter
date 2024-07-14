@@ -5,9 +5,15 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-const App = () => {
+const ResearchRoadmap = () => {
   return (
     <div>
+
+      <div className="text-center mt-12 mb-6">
+        <h2 className="text-2xl font-bold mb-2">Research Roadmap</h2>
+        <h3 className="text-lg text-gray-500">- Explore Research Methodologies With Us -</h3>
+      </div>
+
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -200,4 +206,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ResearchRoadmap;

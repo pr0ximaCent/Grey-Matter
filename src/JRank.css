@@ -1,17 +1,14 @@
 .JRank {
-  text-align: center;
-}
-
-.MuiAppBar-root {
-  margin-bottom: 20px;
-}
-
-.MuiBox-root {
-  display: flex;
-  justify-content: space-between;
+  background-color: #111827;
+  color: #ffffff; /* Text color for contrast */
+  height: 100%; /* Ensure full viewport height */
   padding: 20px;
+  font-family: Arial, sans-serif; /* Example font */
 }
-
-.MuiTableCell-head {
-  font-weight: bold;
+.separator-line {
+  border: 0;
+  height: 2px;
+  background: #121212; /* White color to match the text color */
+  margin: 20px 0; /* Adjust the margin as needed */
+  opacity: 0.7; /* Optional: adjust opacity for a subtle look */
 }

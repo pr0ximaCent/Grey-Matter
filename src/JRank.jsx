@@ -2,8 +2,10 @@ import { useState } from "react";
 import JHeader from "./components/JHeader";
 import JFilter from "./components/JFilter";
 import JournalTable from "./components/JournalTable";
+import Footer from "./components/Footer"
 import "./JRank.css";
 import Header from "./components/Header.jsx";
+import { colors } from "@mui/material";
 
 // Example data, replace with your actual data source
 const data = [
@@ -62,7 +64,8 @@ function JRank() {
       <JHeader />
       <JFilter applyFilters={applyFilters} />
       <JournalTable data={filteredData} />
-    
+      <hr className="separator-line" />
+      <Footer />
     </div>
   );
 }

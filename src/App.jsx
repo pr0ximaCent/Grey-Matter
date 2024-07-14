@@ -19,7 +19,6 @@ const App = () => {
         <Benefits />
         <Collaboration />
         <Services />
-        <JRank />
         <Roadmap />
         <FAQ />
         <Footer />

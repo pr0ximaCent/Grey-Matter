@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { greymatter } from '../assets';
-import { navigation } from '../constants';
+import { navigation } from '../constants/index.js';
 import Button from './Button';
 import { HamburgerMenu } from './design/Header';
 import SignUpModal from './SignupModal';
@@ -98,7 +98,7 @@ const Header = () => {
 
             <Button
               href="#login"
-              className="text-xs font-medium h-6 w-12 transition-all duration-300 hover:bg-gradient-to-r hover:from-white hover:to-lightBlue-300"
+              className="text-xs font-medium h-6 w-12 transition-all duration-300 hover:bg-gradient-to-r hover:text-black"
             >
               Join!
             </Button>

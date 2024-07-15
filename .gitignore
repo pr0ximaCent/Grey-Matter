@@ -1,4 +1,7 @@
 # Logs
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 logs
 *.log
 npm-debug.log*

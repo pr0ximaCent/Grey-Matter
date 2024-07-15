@@ -1,4 +1,3 @@
-import {benefitData} from "../constants";
 import {useEffect, useState} from "react";
 
 
@@ -10,7 +9,7 @@ const Benefits = () => {
     const fetchScholarData = async (index_number) => {
         setLoading(true);
         setStartIndex(index_number);
-        const response = await fetch(`https://beta.vectorclasses.net/data/${startIndex}/${startIndex + page_containers_count - 1}`);
+        const response = await fetch(`https://beta.vectorclasses.net/scholar_data/${startIndex}/${startIndex + page_containers_count - 1}`);
         const data = await response.json();
         console.log(data);
         setScholarData(data);

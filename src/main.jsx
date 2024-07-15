@@ -8,6 +8,7 @@ import {
 import App from "./App.jsx";
 import "./index.css";
 import JRank from "./JRank.jsx";
+import WannaBeResearcher from "./components/design/wanna_be_researcher.jsx";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     }, {
         path: "/journal-ranking",
         element: <JRank />
+    },
+    {
+        path: "/wanna-be-a-researcher",
+        element: <WannaBeResearcher />
     }
 ]);
 

@@ -1,7 +1,8 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import JHeader from "./components/JHeader";
 import JFilter from "./components/JFilter";
 import JournalTable from "./components/JournalTable";
+import Footer from "./components/Footer"
 import "./JRank.css";
 import Header from "./components/Header.jsx";
 
@@ -40,6 +41,9 @@ const data = [
 function JRank() {
   // State for filtered data
   const [filteredData, setFilteredData] = useState(data);
+  const [loading, setLoading] = useState(false);
+  const [startIndex, setStartIndex] = useState(1);
+  const page_containers_count = 25;
 
   // Function to apply filters and update filteredData state
   const applyFilters = (filters) => {
@@ -55,14 +59,29 @@ function JRank() {
 
     setFilteredData(filtered);
   };
+  const fetchJournalData = async (index_number) => {
+    setLoading(true);
+    setStartIndex(index_number);
+    const response = await fetch(`https://beta.vectorclasses.net/journal_data/${startIndex}/${startIndex + page_containers_count - 1}`);
+    const data = await response.json();
+    console.log(data);
+    setFilteredData(data);
+    setLoading(false);
+  }
+  useEffect(() => {
+    fetchJournalData(1);
+
+  }, []);
+
 
   return (
     <div className="App">
       <Header />
       <JHeader />
       <JFilter applyFilters={applyFilters} />
-      <JournalTable data={filteredData} />
-    
+      <JournalTable data={filteredData} fetchJournalData={fetchJournalData} />
+      <hr className="separator-line" />
+      <Footer />
     </div>
   );
 }

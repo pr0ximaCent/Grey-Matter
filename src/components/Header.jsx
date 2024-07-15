@@ -44,7 +44,7 @@ const Header = () => {
         onMouseLeave={(e) => e.currentTarget.style.backgroundColor = ''}
       >
         <div className="flex items-center justify-between px-4 lg:px-8 py-3 max-w-screen-xl mx-auto">
-          <a className="flex items-center" href="#hero">
+          <a className="flex items-center" href="/">
             <img src={greymatter} width={60} height={40} alt="Grey Matter" />
             <span className="ml-2 text-white text-lg font-semibold">
               Grey Matter

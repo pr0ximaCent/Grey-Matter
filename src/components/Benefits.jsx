@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { benefitData } from '../constants';
+import { benefitData } from '../constants/index';
 import HorizontalLine from './HorizontalLine';
 
 const Benefits = () => {

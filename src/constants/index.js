@@ -50,7 +50,7 @@ export const navigation = [
   {
     id: "3",
     title: "Wanna Be a Researcher?",
-    url: "wann-be-a-researcher",
+    url: "wanna-be-a-researcher",
   },
 ];
 

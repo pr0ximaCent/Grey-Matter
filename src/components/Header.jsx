@@ -85,7 +85,7 @@ const Header = () => {
 
             <Button
               href="#login"
-              className="text-xs font-medium h-6 w-12 transition-all duration-300 hover:bg-gradient-to-r hover:from-white hover:to-lightBlue-300"
+              className="text-xs font-medium h-6 w-12 transition-all duration-300 hover:bg-gradient-to-r hover:text-black"
             >
               Join!
             </Button>

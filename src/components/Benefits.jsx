@@ -1,16 +1,81 @@
-import { benefitData } from "../constants";
-import HorizontalLine from "./HorizontalLine";
+import { useState } from 'react';
+import { benefitData } from '../constants';
+import HorizontalLine from './HorizontalLine';
 
 const Benefits = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedInstitute, setSelectedInstitute] = useState('Institute');
+  const [selectedSubject, setSelectedSubject] = useState('Subject');
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleInstituteChange = (e) => {
+    setSelectedInstitute(e.target.value);
+  };
+
+  const handleSubjectChange = (e) => {
+    setSelectedSubject(e.target.value);
+  };
+
+  const filteredData = benefitData.filter((benefit) => {
+    const searchLower = searchTerm.toLowerCase();
+    return (
+      (benefit.name.toLowerCase().includes(searchLower) ||
+        benefit.institution.toLowerCase().includes(searchLower) ||
+        benefit.field.toLowerCase().includes(searchLower) ||
+        benefit.country.toLowerCase().includes(searchLower)) &&
+      (selectedInstitute === 'Institute' || benefit.institution === selectedInstitute) &&
+      (selectedSubject === 'Subject' || benefit.field.includes(selectedSubject))
+    );
+  });
+
   return (
-    
     <div className="container mx-auto p-4">
-      <HorizontalLine/><br></br>
-      <h1 className="h1 mb-6 text-n-1" style={{ textAlign: 'center' }}>
-       Bangladedsh Scientists Rankings 2024
-      </h1>
+      <HorizontalLine /><br />
+      <h2 className="h2 mb-6 text-n-1" style={{ textAlign: 'center' }}>
+        Bangladesh Scientists Rankings 2024
+      </h2>
+
+      {/* Filtering Options Row */}
+      <div className="flex justify-center items-center mb-4 space-x-4">
+        <select
+          value={selectedInstitute}
+          onChange={handleInstituteChange}
+          className="p-2 border bg-white border-gray-300 text-black rounded w-1/2 md:w-auto"
+        >
+          <option value="Institute">Select Institution</option>
+          <option value="International Centre for Diarrhoeal Disease Research">International Centre for Diarrhoeal Disease Research</option>
+          <option value="Bangladesh University of Engineering and Technology">Bangladesh University of Engineering and Technology</option>
+          <option value="BRAC University">BRAC University</option>
+          {/* Add more institutions as needed */}
+        </select>
+        <select
+          value={selectedSubject}
+          onChange={handleSubjectChange}
+          className="p-2 border bg-white border-gray-300 text-black rounded w-1/2 md:w-auto"
+        >
+          <option value="Subject">Select Subject</option>
+          <option value="Medical and Health Sciences / Infectious Diseases">Medical and Health Sciences / Infectious Diseases</option>
+          <option value="Engineering & Technology / Industrial & Manufacturing Engineering">Engineering & Technology / Industrial & Manufacturing Engineering</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+
+      {/* Search Bar Row */}
+      <div className="flex justify-center items-center mb-6">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleSearchChange}
+          placeholder="Name, University, Subject, or Interests"
+          className="p-2 border border-gray-300 rounded w-full max-w-3xl bg-white text-black"
+        />
+      </div>
+
       <div className="flex flex-wrap -mx-2">
-        {benefitData.map((benefit, index) => (
+        {filteredData.map((benefit, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
             <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col h-full">
               <div className="flex h-36 items-center justify-between p-4 border-b">

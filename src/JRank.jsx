@@ -62,7 +62,7 @@ function JRank() {
     <div className="App">
       <Header />
       <JHeader />
-      <JFilter applyFilters={applyFilters} />
+      {/* <JFilter applyFilters={applyFilters} /> */}
       <JournalTable data={filteredData} />
       <hr className="separator-line" />
       <Footer />

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { benefitData } from '../constants';
+import { benefitData } from '../constants/index';
 import HorizontalLine from './HorizontalLine';
 
 const Benefits = () => {
@@ -26,14 +26,16 @@ const Benefits = () => {
         benefit.institution.toLowerCase().includes(searchLower) ||
         benefit.field.toLowerCase().includes(searchLower) ||
         benefit.country.toLowerCase().includes(searchLower)) &&
-      (selectedInstitute === 'Institute' || benefit.institution === selectedInstitute) &&
+      (selectedInstitute === 'Institute' ||
+        benefit.institution === selectedInstitute) &&
       (selectedSubject === 'Subject' || benefit.field.includes(selectedSubject))
     );
   });
 
   return (
     <div className="container mx-auto p-4">
-      <HorizontalLine /><br />
+      <HorizontalLine />
+      <br />
       <h2 className="h2 mb-6 text-n-1" style={{ textAlign: 'center' }}>
         Bangladesh Scientists Rankings 2024
       </h2>
@@ -46,8 +48,12 @@ const Benefits = () => {
           className="p-2 border bg-white border-gray-300 text-black rounded w-1/2 md:w-auto"
         >
           <option value="Institute">Select Institution</option>
-          <option value="International Centre for Diarrhoeal Disease Research">International Centre for Diarrhoeal Disease Research</option>
-          <option value="Bangladesh University of Engineering and Technology">Bangladesh University of Engineering and Technology</option>
+          <option value="International Centre for Diarrhoeal Disease Research">
+            International Centre for Diarrhoeal Disease Research
+          </option>
+          <option value="Bangladesh University of Engineering and Technology">
+            Bangladesh University of Engineering and Technology
+          </option>
           <option value="BRAC University">BRAC University</option>
           {/* Add more institutions as needed */}
         </select>
@@ -57,8 +63,12 @@ const Benefits = () => {
           className="p-2 border bg-white border-gray-300 text-black rounded w-1/2 md:w-auto"
         >
           <option value="Subject">Select Subject</option>
-          <option value="Medical and Health Sciences / Infectious Diseases">Medical and Health Sciences / Infectious Diseases</option>
-          <option value="Engineering & Technology / Industrial & Manufacturing Engineering">Engineering & Technology / Industrial & Manufacturing Engineering</option>
+          <option value="Medical and Health Sciences / Infectious Diseases">
+            Medical and Health Sciences / Infectious Diseases
+          </option>
+          <option value="Engineering & Technology / Industrial & Manufacturing Engineering">
+            Engineering & Technology / Industrial & Manufacturing Engineering
+          </option>
           <option value="Others">Others</option>
         </select>
       </div>

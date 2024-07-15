@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { greymatter } from '../assets';
 import { navigation } from '../constants/index.js';
 import Button from './Button';
@@ -10,6 +10,7 @@ import 'react-responsive-modal/styles.css';
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [signupOpen, setSignupOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
 
@@ -38,13 +39,16 @@ const Header = () => {
     setLoginOpen(false);
   };
 
-  const handleClick = (event) => {
+  const handleClick = (event, url) => {
     event.preventDefault();
-    const url = event.currentTarget.getAttribute('href');
-    const element = document.querySelector(url);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      window.history.pushState(null, '', url);
+    if (url === 'journal-ranking') {
+      navigate('/journal-ranking');
+    } else {
+      const element = document.querySelector(`#${url}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', `#${url}`);
+      }
     }
   };
 
@@ -57,7 +61,11 @@ const Header = () => {
         }}
       >
         <div className="flex items-center justify-between px-4 lg:px-8 py-3 max-w-screen-xl mx-auto">
-          <a className="flex items-center" href="#hero" onClick={handleClick}>
+          <a
+            className="flex items-center"
+            href="#hero"
+            onClick={(e) => handleClick(e, 'hero')}
+          >
             <img src={greymatter} width={60} height={40} alt="Grey Matter" />
             <span className="ml-2 text-white text-lg font-semibold">
               Grey Matter
@@ -68,8 +76,12 @@ const Header = () => {
             {navigation.map((elem) => (
               <a
                 key={elem.id}
-                href={`#${elem.url}`}
-                onClick={handleClick}
+                href={
+                  elem.url !== 'journal-ranking'
+                    ? `#${elem.url}`
+                    : `/${elem.url}`
+                }
+                onClick={(event) => handleClick(event, elem.url)}
                 className={`text-gray-300 hover:text-white transition-colors duration-300 py-2 px-3 text-xs font-medium uppercase ${
                   `#${elem.url}` === location.hash ? 'text-white' : ''
                 }`}

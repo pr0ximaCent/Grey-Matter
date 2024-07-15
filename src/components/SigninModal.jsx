@@ -1,8 +1,13 @@
-import 'react';
 import Modal from 'react-responsive-modal';
 import 'react-responsive-modal/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGoogle,
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 
 const SignInModal = ({ open, onClose }) => (
   <Modal
@@ -17,24 +22,37 @@ const SignInModal = ({ open, onClose }) => (
         backgroundColor: '#1a202c', // Dark background color
         color: '#ffffff', // Text color
         padding: '20px',
+        maxWidth: '600px', // Adjust maximum width as needed
+        maxHeight: '80vh', // Adjust maximum height as needed
       },
     }}
+    overlayClassName="customOverlay"
   >
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4" style={{ color: 'white' }}>
-        Login and Get Started
+      <h2
+        className="text-2xl font-bold mb-4"
+        style={{ color: 'white', textAlign: 'center' }}
+      >
+        Welcome Back!
       </h2>
-      <span className="text-gray-400 text-sm mb-6 block">
-        Just fill in the form below
+      <span
+        className="text-gray-400 text-sm mb-6 block"
+        style={{ color: 'white', textAlign: 'center' }}
+      >
+        Please sign in to continue
       </span>
-      <form className="space-y-4">
-        <div className="relative">
+      <form className="space-y-6">
+        {' '}
+        {/* Increased vertical spacing */}
+        <div className="relative mb-6">
+          {' '}
+          {/* Increased margin-bottom */}
           <FontAwesomeIcon
             icon={faEnvelope}
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
           />
           <input
-            className="w-full border border-gray-700 rounded-md py-2 px-10 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-700 rounded-md py-2 px-10 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
             type="email"
             name="email"
             placeholder="E-mail"
@@ -43,7 +61,9 @@ const SignInModal = ({ open, onClose }) => (
             aria-required="true"
           />
         </div>
-        <div className="relative">
+        <div className="relative mb-6">
+          {' '}
+          {/* Increased margin-bottom */}
           <FontAwesomeIcon
             icon={faLock}
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -51,7 +71,7 @@ const SignInModal = ({ open, onClose }) => (
           <input
             type="password"
             name="pass"
-            className="w-full border border-gray-700 rounded-md py-2 px-10 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-700 rounded-md py-2 px-10 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder="Password"
             required
             autoComplete="off"
@@ -59,9 +79,23 @@ const SignInModal = ({ open, onClose }) => (
           />
         </div>
         <button className="w-full py-2 px-4 rounded-md text-white font-bold hover:opacity-90 bg-gradient-to-r from-purple-500 to-indigo-400 transition duration-300">
-          Login
+          Sign In
         </button>
       </form>
+      <div className="mt-6 flex justify-center space-x-4">
+        <button className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-white hover:bg-gray-700 transition duration-300">
+          <FontAwesomeIcon icon={faGoogle} size="lg" />
+        </button>
+        <button className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-white hover:bg-gray-700 transition duration-300">
+          <FontAwesomeIcon icon={faFacebook} size="lg" />
+        </button>
+        <button className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-white hover:bg-gray-700 transition duration-300">
+          <FontAwesomeIcon icon={faTwitter} size="lg" />
+        </button>
+        <button className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-800 text-white hover:bg-gray-700 transition duration-300">
+          <FontAwesomeIcon icon={faLinkedin} size="lg" />
+        </button>
+      </div>
     </div>
   </Modal>
 );

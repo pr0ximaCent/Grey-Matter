@@ -12,6 +12,25 @@
   --font-grotesk: "Space Grotesk", sans-serif;
   color-scheme: dark;
 }
+@keyframes drop {
+  0% {
+    top: -50%;
+    opacity: 1; /* Fully visible at the start */
+  }
+  50% {
+    opacity: 1; /* Remain visible in the middle */
+  }
+  75% {
+    top: 75%; /* Gradually move down */
+    opacity: 0.7; /* Start fading out */
+  }
+  100% {
+    top: 110%; /* Move below the viewport */
+    opacity: 0; /* Fade out completely */
+  }
+}
+
+
 
 * {
   scroll-behavior: smooth;
@@ -19,15 +38,64 @@
 
 @layer base {
   body {
-    font-family: "Sora", sans-serif;
+    font-family: 'Sora', sans-serif;
     /* Set your preferred font family */
-    background-color: #111827;
-    /* Adjust the hex code to your desired shade */
+    background: linear-gradient(180deg,
+        #101728 0%,
+        #39226d 30%,
+        rgb(21, 10, 45) 70%,
+        #1D232A 100%);
+    /* Gradient background from #111827 to a lighter shade */
     color: #d6cb65;
     /* Set your preferred text color */
     scroll-behavior: smooth;
   }
 }
+
+
+
+
+
+
+
+
+
+.floating-flask {
+  animation: float 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .rotate-45 {
   @apply rotate-[45deg]

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { greymatter } from '../assets';
-import { navigation } from '../constants';
+import { navigation } from '../constants/index.js';
 import Button from './Button';
 import { HamburgerMenu } from './design/Header';
 import SignUpModal from './SignupModal';

@@ -37,7 +37,7 @@ export const navigation = [
   },
   {
     id: '3',
-    title: 'Top 6 in BD',
+    title: 'Top Researchers In BD',
     url: 'wannabe-a-researcher',
   },
 ];

@@ -1,3 +1,5 @@
+
+
 const Footer = () => {
   const footerStyle = {
     backgroundColor: '#15131E',
@@ -84,46 +86,46 @@ const Footer = () => {
             <ul>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="https://www.researchgate.net/"
                   className="text-sm"
                   style={hoverStyle}
                   onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
                   onMouseLeave={(e) => (e.target.style.color = 'white')}
                 >
-                  Site 1
+                  ResearchGate
                 </a>
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="https://ieeexplore.ieee.org/"
                   className="text-sm"
                   style={hoverStyle}
                   onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
                   onMouseLeave={(e) => (e.target.style.color = 'white')}
                 >
-                  Site 2
+                  IEEE Xplore
                 </a>
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="https://www.sciencedirect.com/"
                   className="text-sm"
                   style={hoverStyle}
                   onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
                   onMouseLeave={(e) => (e.target.style.color = 'white')}
                 >
-                  Site 3
+                  ScienceDirect
                 </a>
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="https://arxiv.org/"
                   className="text-sm"
                   style={hoverStyle}
                   onMouseEnter={(e) => (e.target.style.color = '#gray-400')}
                   onMouseLeave={(e) => (e.target.style.color = 'white')}
                 >
-                  Site 4
+                  arXiv
                 </a>
               </li>
             </ul>
@@ -133,12 +135,22 @@ const Footer = () => {
             <ul className="flex justify-center space-x-4">
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/dot.quanta.007"
                   style={iconHoverStyle}
                   onMouseEnter={(e) => (e.target.style.color = 'white')}
                   onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
                 >
                   <i className="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sabik-aftahee-2017a617b/"
+                  style={iconHoverStyle}
+                  onMouseEnter={(e) => (e.target.style.color = 'white')}
+                  onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
+                >
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
               </li>
               <li>
@@ -149,16 +161,6 @@ const Footer = () => {
                   onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
                 >
                   <i className="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  style={iconHoverStyle}
-                  onMouseEnter={(e) => (e.target.style.color = 'white')}
-                  onMouseLeave={(e) => (e.target.style.color = '#gray-400')}
-                >
-                  <i className="fab fa-linkedin-in"></i>
                 </a>
               </li>
               <li>

@@ -4,7 +4,6 @@ import Section from "./Section";
 import { BackgroundCircles, BottomLine } from "./design/Hero";
 import { useRef } from "react";
 import Generating from "./Generating";
-import CompanyLogos from "./CompanyLogos";
 
 const handleNavigate = () => {
   window.location.href = "/wannabe-a-researcher"; // Replace with your actual URL
@@ -66,7 +65,7 @@ const Hero = () => {
           <BackgroundCircles />
         </div>
 
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
+       
       </div>
 
       <BottomLine />

@@ -58,7 +58,7 @@ th, td {
 }
 
 .tbody tr:hover {
-  background-color: #dcdcdc; /* Hover effect */
+  background-color: #6fc3c3; /* Hover effect */
 }
 
 .tbody tr:hover td {
@@ -71,7 +71,7 @@ th, td {
 }
 
 .tbody tr:hover td {
-  border-color: rgba(210, 227, 249, 1); /* Blurred border color on hover */
+  border-color: rgba(210, 227, 249, .45); /* Blurred border color on hover */
 }
 
 .tbody tr td:hover::after {

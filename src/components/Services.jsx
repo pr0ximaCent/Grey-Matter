@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
+import { greyammterServices, greyammterServicesIcons } from "../constants";
 import {
   PhotoChatMessage,
   Gradient,
@@ -17,7 +17,7 @@ const Services = () => {
       <div className="container">
         <Heading
           title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          text="greyammter unlocks the potential of AI-powered applications"
         />
 
         <div className="relative">
@@ -35,10 +35,10 @@ const Services = () => {
             <div className="relative z-1 max-w-[17rem] ml-auto">
               <h4 className="h4 mb-4">Smartest AI</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                greyammter unlocks the potential of AI-powered applications
               </p>
               <ul className="body-2">
-                {brainwaveServices.map((item, index) => (
+                {greyammterServices.map((item, index) => (
                   <li
                     key={index}
                     className="flex items-start py-4 border-t border-n-6"
@@ -85,7 +85,7 @@ const Services = () => {
                 </p>
 
                 <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
+                  {greyammterServicesIcons.map((item, index) => (
                     <li
                       key={index}
                       className={`rounded-2xl flex items-center justify-center ${

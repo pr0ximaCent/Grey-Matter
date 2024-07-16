@@ -43,12 +43,15 @@ const Header = () => {
     event.preventDefault();
     if (url === "journal-ranking") {
       navigate("/journal-ranking");
-    } else if (url === "research-roadmap") {
+    } else if (url === "#research-roadmap") {
       const element = document.querySelector("#research-roadmap");
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
-    } else if (url === "Home") {
+    }else if (url === "wannabe-a-researcher") {
+        navigate("/wannabe-a-researcher");
+    }
+    else if (url === "Home") {
       //home link alada handle kora hoise, see if you can make it better without altering functionality
       navigate("/");
     } else {
@@ -89,9 +92,7 @@ const Header = () => {
               <a
                 key={elem.id}
                 href={
-                  elem.url !== "journal-ranking"
-                    ? `#${elem.url}`
-                    : `/${elem.url}`
+                  elem.url
                 }
                 onClick={(event) => handleClick(event, elem.url)}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold ${

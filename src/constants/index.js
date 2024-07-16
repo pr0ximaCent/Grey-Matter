@@ -33,7 +33,7 @@ export const navigation = [
   {
     id: '2',
     title: 'Research Roadmap',
-    url: 'research-roadmap',
+    url: '#research-roadmap',
   },
   {
     id: '3',

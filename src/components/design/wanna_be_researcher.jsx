@@ -19,7 +19,8 @@ function WannaBeResearcher() {
             },
             body: JSON.stringify({
                 field: category,
-                limit: page_containers_count
+                start_index: startIndex,
+                end_index: startIndex + page_containers_count - 1
             }),
         });
         const data = await response.json();
@@ -32,7 +33,16 @@ function WannaBeResearcher() {
     const fetchScholarData = async (index_number) => {
         setLoading(true);
         setStartIndex(index_number);
-        const response = await fetch(`https://beta.vectorclasses.net/scholar_data/${startIndex}/${startIndex + page_containers_count - 1}`);
+        const response =  await fetch(`${constant_data.backend_url}/search_scholar_data`,{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                start_index: startIndex,
+                end_index: startIndex + page_containers_count - 1
+            }),
+        });
         const data = await response.json();
         console.log(data);
         setScholarData(data);

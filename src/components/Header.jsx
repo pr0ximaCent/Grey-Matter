@@ -43,12 +43,15 @@ const Header = () => {
     event.preventDefault();
     if (url === "journal-ranking") {
       navigate("/journal-ranking");
-    } else {
-      const element = document.querySelector(`#${url}`);
+    } else if (url === "research-roadmap") {
+      const element = document.querySelector("#research-roadmap");
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
-        window.history.pushState(null, "", `#${url}`);
       }
+    } else if (url === "Home") { //home link alada handle kora hoise, see if you can make it better without altering functionality
+      navigate("/");
+    } else {
+      navigate("/");
     }
   };
 

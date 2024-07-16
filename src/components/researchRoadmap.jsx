@@ -8,7 +8,7 @@ import HorizontalLine from "./HorizontalLine";
 
 const ResearchRoadmap = () => {
   return (
-    <div>
+    <div id="research-roadmap">
       <div className="text-center mt-12 mb-6">
         <div className="container mx-auto p-4">
           <HorizontalLine />

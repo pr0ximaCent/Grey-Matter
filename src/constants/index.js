@@ -23,7 +23,7 @@ export const navigation = [
   {
     id: '0',
     title: 'Home',
-    url: 'Home',
+    url: 'home',
   },
   {
     id: '1',
@@ -32,15 +32,16 @@ export const navigation = [
   },
   {
     id: '2',
-    title: 'Reasearch Roadmap',
+    title: 'Research Roadmap',
     url: 'research-roadmap',
   },
   {
     id: '3',
     title: 'Wanna Be a Researcher?',
-    url: 'wann-be-a-researcher',
+    url: 'wannabe-a-researcher',
   },
 ];
+
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 

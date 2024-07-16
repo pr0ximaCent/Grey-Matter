@@ -7,6 +7,8 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import '@fortawesome/fontawesome-free/css/all.css';
 import LinesComponent from './components/LinesComponent';
+import Roadmap from "./components/Roadmap.jsx";
+import JRank from "./JRank.jsx";
 
 const App = () => {
   return (

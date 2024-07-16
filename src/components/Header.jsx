@@ -61,15 +61,12 @@ const Header = () => {
         }}
       >
         <div className="flex items-center justify-between px-4 lg:px-8 py-3 max-w-screen-xl mx-auto">
-<<<<<<< HEAD
-          <a className="flex items-center" href="/">
-=======
           <a
             className="flex items-center"
             href="#hero"
             onClick={(e) => handleClick(e, 'hero')}
           >
->>>>>>> 5842ed1a42cb9aac2f9109341e2de63a1748f14f
+
             <img src={greymatter} width={60} height={40} alt="Grey Matter" />
             <span className="ml-2 text-white text-lg font-semibold">
               Grey Matter

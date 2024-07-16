@@ -28,7 +28,7 @@ const Hero = () => {
             First and only Research Collab Of Bangladesh in One place!
           </p>
           <Button href="/login" white>
-            Get started
+            Find The Bests!
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">

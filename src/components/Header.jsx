@@ -91,7 +91,7 @@ const Header = () => {
 
             <a
               href="#signin"
-              className="text-gray-300 hover:text-white transition-colors duration-300 py-2 px-3 text-xs font-medium uppercase"
+              className="text-gray-300 hover:text-white transition-colors duration-300 py-2 px-12 text-xs font-medium uppercase"
               onClick={handleLoginOpen}
             >
               Sign In

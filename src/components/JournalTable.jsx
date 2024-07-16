@@ -269,8 +269,8 @@ function JournalTable() {
               fontSize: "0.2rem", // Adjust font size for content
               overflow: "auto",
               p: 2,
-              backgroundColor: "#111827",
-              color: "#ffffff",
+              backgroundColor: "#bdd5fa",
+              color: "#000000",
               boxShadow: "inherit",
               border: "2px solid #4378ec",
               borderRadius: "8px",
@@ -282,7 +282,7 @@ function JournalTable() {
               <Typography variant="h6" gutterBottom>
                 {selectedRow.Title}
               </Typography>
-              <Divider sx={{ borderBottom: "1px solid #ffffff" }} />
+              <Divider sx={{ borderBottom: "1px solid #000000" }} />
               <Grid container spacing={1}>
                 <Grid item xs={6} sx={{ marginTop: "10px" }}>
                   <Typography variant="body2">

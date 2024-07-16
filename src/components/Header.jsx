@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { greymatter } from '../assets';
-import { navigation } from '../constants/index.js';
-import Button from './Button';
-import { HamburgerMenu } from './design/Header';
-import SignUpModal from './SignupModal';
-import SignInModal from './SigninModal';
-import 'react-responsive-modal/styles.css';
+import { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { greymatter } from "../assets";
+import { navigation } from "../constants/index.js";
+import Button from "./Button";
+import { HamburgerMenu } from "./design/Header";
+import SignUpModal from "./SignupModal";
+import SignInModal from "./SigninModal";
+import "react-responsive-modal/styles.css";
 
 const Header = () => {
   const location = useLocation();
@@ -18,7 +18,7 @@ const Header = () => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [location.hash]);
@@ -41,13 +41,13 @@ const Header = () => {
 
   const handleClick = (event, url) => {
     event.preventDefault();
-    if (url === 'journal-ranking') {
-      navigate('/journal-ranking');
+    if (url === "journal-ranking") {
+      navigate("/journal-ranking");
     } else {
       const element = document.querySelector(`#${url}`);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        window.history.pushState(null, '', `#${url}`);
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.pushState(null, "", `#${url}`);
       }
     }
   };
@@ -57,16 +57,11 @@ const Header = () => {
       <div
         className="bg-gradient-to-b from-navyBlue-700 to-lightBlack-800 shadow-md"
         style={{
-          backdropFilter: 'blur(8px)', // Optional: Adds a blur effect behind the element
+          backdropFilter: "blur(8px)", // Optional: Adds a blur effect behind the element
         }}
       >
         <div className="flex items-center justify-between px-4 lg:px-8 py-3 max-w-screen-xl mx-auto">
-          <a
-            className="flex items-center"
-            href="#hero"
-            onClick={(e) => handleClick(e, 'hero')}
-          >
-
+          <a className="flex items-center" href="/">
             <img src={greymatter} width={60} height={40} alt="Grey Matter" />
             <span className="ml-2 text-white text-lg font-semibold">
               Grey Matter
@@ -78,13 +73,13 @@ const Header = () => {
               <a
                 key={elem.id}
                 href={
-                  elem.url !== 'journal-ranking'
+                  elem.url !== "journal-ranking"
                     ? `#${elem.url}`
                     : `/${elem.url}`
                 }
                 onClick={(event) => handleClick(event, elem.url)}
                 className={`text-gray-300 hover:text-white transition-colors duration-300 py-2 px-3 text-xs font-medium uppercase ${
-                  `#${elem.url}` === location.hash ? 'text-white' : ''
+                  `#${elem.url}` === location.hash ? "text-white" : ""
                 }`}
               >
                 {elem.title}

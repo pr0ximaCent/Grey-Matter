@@ -3,7 +3,7 @@
   width: 100%;
   margin: 20px auto;
   overflow-x: auto;
-  background-color: #111827; /* Dark background */
+  background-color: #90a3cc; /* Dark background */
 }
 
 .table {
@@ -12,7 +12,7 @@
   border-collapse: collapse;
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid #4378ec; /* Border color for the entire table */
+  border: 1px solid #98b0d3; /* Lighter border color for the entire table */
   background-color: #4378ec; /* Default table background */
 }
 
@@ -21,16 +21,16 @@ th, td {
   text-align: left;
   color: #ffffff; /* Text color changed to white */
   opacity: 0.8;
-  border-right: 1px solid #ffffff; /* Column divider line */
+  border-right: 1px solid #d2e3f9; /* Very light column divider line */
   font-weight: bold; /* Make text bold */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
 .thead {
-  background-color: #5a67d8; /* Header background color */
+  background-color: #BFDBFE; /* Header background color */
   color: #ffffff; /* Header text color */
-  border-bottom: 1.2px solid #713333; /* Border color for header */
+  border-bottom: 1px solid #98b0d3; /* Lighter border color for header */
 }
-
 
 .thead th {
   font-size: 1.0rem;
@@ -40,7 +40,8 @@ th, td {
   letter-spacing: 0.1em;
   text-transform: capitalize;
   padding: 15.27px; /* Increased padding for better readability */
-  border-right: 1px solid #56479b;
+  border-right: 1px solid #b8b7b7; /* Very light column divider line */
+  border-bottom: 1px solid #98b0d3; /* Lighter border color for header */
 }
 
 .thead th:first-child {
@@ -51,20 +52,42 @@ th, td {
   border-right: none; /* Remove right border for the last header cell */
 }
 
-.tbody .even-row {
-  background-color: #fed7aa; /* Light peach for even rows */
-}
-
-.tbody .odd-row {
-  background-color: #bfdbfe; /* Light blue for odd rows */
-}
-
-.tbody tr td {
-  border-bottom: 1px solid #4378ec; /* Row bottom border */
+.tbody .even-row, .tbody .odd-row {
+  background-color: #F8F8F8; /* Off-white color for rows */
+  transition: background-color 0.3s ease;
 }
 
 .tbody tr:hover {
-  background-color: #e9d5ff; /* Light purple on hover */
+  background-color: #dcdcdc; /* Hover effect */
+}
+
+.tbody tr:hover td {
+  padding: 12px 15px; /* Maintain default padding on hover */
+}
+
+.tbody tr td {
+  border-bottom: 1px solid #98b0d3; /* Lighter row bottom border */
+  position: relative; /* Ensure relative positioning for absolute element */
+}
+
+.tbody tr:hover td {
+  border-color: rgba(210, 227, 249, 1); /* Blurred border color on hover */
+}
+
+.tbody tr td:hover::after {
+  content: "Click to see details"; /* Text to display on hover */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+  background-color: #111827; /* Background color (black) */
+  padding: 8px 12px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  color: #ffffff; /* Text color (white) */
+  font-size: 14px; /* Font size */
+  font-weight: normal; /* Normal font weight */
+  white-space: nowrap; /* Prevent text from wrapping */
+  z-index: 1; /* Ensure text appears above row */
 }
 
 .tbody tr:last-child td {
@@ -77,5 +100,5 @@ th, td {
 }
 
 .tbody tr {
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }

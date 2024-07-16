@@ -19,8 +19,8 @@ const App = () => {
         <Hero />
         <Benefits />
     
-        <JRank />
-        <Roadmap />
+        <ResearchRoadmap />
+        <FAQ />
         <Footer />
       </div>
 

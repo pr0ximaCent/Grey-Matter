@@ -1,12 +1,14 @@
 import { robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
-import { BackgroundCircles, BottomLine} from "./design/Hero";
+import { BackgroundCircles, BottomLine } from "./design/Hero";
 import { useRef } from "react";
 import Generating from "./Generating";
 import CompanyLogos from "./CompanyLogos";
 
-
+const handleNavigate = () => {
+  window.location.href = "/wannabe-a-researcher"; // Replace with your actual URL
+};
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -27,7 +29,12 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-1 lg:mb-8">
             First and only Research Collab Of Bangladesh in One place!
           </p>
-          <Button href="/login" white>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleNavigate}
+            size="large"
+          >
             Find The Bests!
           </Button>
         </div>
@@ -45,8 +52,6 @@ const Hero = () => {
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
               </div>
             </div>
-
-            
           </div>
           {/* <div className="absolute -top-[54%] left-0 right-0 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img

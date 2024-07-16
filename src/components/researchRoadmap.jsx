@@ -14,7 +14,7 @@ const ResearchRoadmap = () => {
           <HorizontalLine />
           <br />
           <h2 className="h2 mb-6 text-n-1" style={{ textAlign: "center" }}>
-            Bangladesh Scientists Rankings 2024
+            Get Started With Being One Of US!
           </h2>
         </div>
         <h3 className="h4 mb-6 text-n-1">

@@ -58,7 +58,7 @@ th, td {
 }
 
 .tbody tr:hover {
-  background-color: #6fc3c3; /* Hover effect */
+  background-color: #E6E6FA         #11364f; /* Hover effect */
 }
 
 .tbody tr:hover td {

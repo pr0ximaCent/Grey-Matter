@@ -397,7 +397,7 @@ function JFilter({ applyFilters }) {
             onClick={handleApplyFilters}
             size="large"
             sx={{
-              backgroundColor: "#416797",
+              backgroundColor: "#2E53BA",
               color: "#ffffff",
               textTransform: "capitalize", // Corrected to lowercase 'capitalize'
               transition: "background-color 0.7s ease", // Adding transition for background-color
@@ -414,7 +414,7 @@ function JFilter({ applyFilters }) {
             size="large"
             sx={{
               marginLeft: "10px",
-              backgroundColor: "#7A7D82",
+              backgroundColor: "#2E53BA",
               color: "#ffffff",
               textTransform: "Capitalize",
               "&:hover": { backgroundColor: "#7C0000" },

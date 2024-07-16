@@ -8,7 +8,7 @@ const Generating = ({ className }) => {
       } text-base`}
     >
       <img className="w-5 h-5 mr-4" src={loading} alt="Loading" />
-      <span className="text-n-8">Do You Know The Exciting Fields Of Researches?</span>
+      <span className="text-n-8">Find Your Researcher Now!</span>
     </div>
   );
 };

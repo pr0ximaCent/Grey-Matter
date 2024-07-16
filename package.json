@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@fontsource/inter": "^5.0.19",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
@@ -19,7 +20,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^5.16.1",
     "@mui/material": "^5.16.1",
+    "install": "^0.13.0",
     "ldrs": "^1.0.2",
+    "npm": "^10.8.2",
     "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "react-just-parallax": "^3.1.16",

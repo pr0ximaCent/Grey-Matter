@@ -66,7 +66,7 @@ th, td {
 }
 
 .tbody tr td {
-  border-bottom: 1px solid #BFDBFE; /* Lighter row bottom border */
+  border-bottom: 1px solid #b6d6e2      #416797; /* Lighter row bottom border */
   position: relative; /* Ensure relative positioning for absolute element */
 }
 

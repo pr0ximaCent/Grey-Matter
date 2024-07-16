@@ -77,14 +77,13 @@ function JFilter({ applyFilters }) {
               MenuProps={{
                 PaperProps: {
                   sx: {
-                    bgcolor: '#111833',
-                    '& .MuiMenuItem-root': {
-                      color: '#ffffff', // Set the text color of menu items
+                    bgcolor: "#111833",
+                    "& .MuiMenuItem-root": {
+                      color: "#ffffff", // Set the text color of menu items
                     },
                   },
                 },
               }}
-  
             >
               <MenuItem value="All">All</MenuItem>
               <MenuItem value="Medicine">Medicine</MenuItem>
@@ -148,9 +147,9 @@ function JFilter({ applyFilters }) {
               MenuProps={{
                 PaperProps: {
                   sx: {
-                    bgcolor: '#111833',
-                    '& .MuiMenuItem-root': {
-                      color: '#ffffff', // Set the text color of menu items
+                    bgcolor: "#111833",
+                    "& .MuiMenuItem-root": {
+                      color: "#ffffff", // Set the text color of menu items
                     },
                   },
                 },
@@ -228,9 +227,9 @@ function JFilter({ applyFilters }) {
               MenuProps={{
                 PaperProps: {
                   sx: {
-                    bgcolor: '#111833',
-                    '& .MuiMenuItem-root': {
-                      color: '#ffffff', // Set the text color of menu items
+                    bgcolor: "#111833",
+                    "& .MuiMenuItem-root": {
+                      color: "#ffffff", // Set the text color of menu items
                     },
                   },
                 },
@@ -275,9 +274,9 @@ function JFilter({ applyFilters }) {
               MenuProps={{
                 PaperProps: {
                   sx: {
-                    bgcolor: '#111833',
-                    '& .MuiMenuItem-root': {
-                      color: '#ffffff', // Set the text color of menu items
+                    bgcolor: "#111833",
+                    "& .MuiMenuItem-root": {
+                      color: "#ffffff", // Set the text color of menu items
                     },
                   },
                 },
@@ -319,9 +318,9 @@ function JFilter({ applyFilters }) {
               MenuProps={{
                 PaperProps: {
                   sx: {
-                    bgcolor: '#111833',
-                    '& .MuiMenuItem-root': {
-                      color: '#ffffff',
+                    bgcolor: "#111833",
+                    "& .MuiMenuItem-root": {
+                      color: "#ffffff",
                     },
                   },
                 },
@@ -398,10 +397,13 @@ function JFilter({ applyFilters }) {
             onClick={handleApplyFilters}
             size="large"
             sx={{
-              backgroundColor: "#4378ec",
+              backgroundColor: "#416797",
               color: "#ffffff",
-              textTransform: "Capitalize",
-              "&:hover": { backgroundColor: "#4398ec" },
+              textTransform: "capitalize", // Corrected to lowercase 'capitalize'
+              transition: "background-color 0.7s ease", // Adding transition for background-color
+              "&:hover": {
+                backgroundColor: "#006102",
+              },
             }}
           >
             Apply
@@ -412,10 +414,10 @@ function JFilter({ applyFilters }) {
             size="large"
             sx={{
               marginLeft: "10px",
-              backgroundColor: "#f44336",
+              backgroundColor: "#7A7D82",
               color: "#ffffff",
               textTransform: "Capitalize",
-              "&:hover": { backgroundColor: "#f44336" },
+              "&:hover": { backgroundColor: "#7C0000" },
             }}
           >
             Reset

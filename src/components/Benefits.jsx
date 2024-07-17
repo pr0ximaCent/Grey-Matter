@@ -46,19 +46,33 @@ const Benefits = () => {
     useEffect(() => {
         fetchScholarData(startIndex);
         fetch(`${constant_data.backend_url}/get_all_scholar_fields`).then(response => response.json()).then(data => {
-            // setSubjectData(data.filter((value, index) => {
-            //     if (index <= 15) {
-            //         return value;
-            //     }
-            // }));
-            setSubjectData(data);
+            let temp_data=[]
+            data.map((value,index)=>{
+                if(value.toString().includes("/")){
+                    let temp=value.split("/");
+                    temp.map((tvalue,index)=>{
+                        temp_data.push(tvalue.toString().trim());
+                    });
+                }
+                else temp_data.push(value);
+            });
+            const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
+            setSubjectData(uniqueElements);
         })
         fetch(`${constant_data.backend_url}/get_all_scholar_institutions`).then(response => response.json()).then(data => {
-            // setInstituteData(data.filter((value, index) => {
-            //     if (index <= 15) {
-            //         return value;
-            //     }
-            // }));
+            let temp_data=[]
+            data.map((value,index)=>{
+                if(value.toString().includes(";")){
+                    let temp=value.split(";");
+                    temp.map((tvalue,index)=>{
+                        temp_data.push(tvalue.toString().trim());
+                    });
+                }
+                else temp_data.push(value);
+            });
+            const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
             setInstituteData(data)
         })
 

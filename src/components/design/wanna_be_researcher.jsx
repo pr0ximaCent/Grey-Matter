@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useEffect, useState} from 'react';
 import constant_data from "../../constants.js";
+
 function WannaBeResearcher() {
 
 
@@ -12,7 +13,7 @@ function WannaBeResearcher() {
     const page_containers_count = 6;
     const fetchScholarByCategory = async (category) => {
         setLoading(true);
-        const response = await fetch(`${constant_data.backend_url}/search_scholar_data`,{
+        const response = await fetch(`${constant_data.backend_url}/search_scholar_data`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,7 +34,7 @@ function WannaBeResearcher() {
     const fetchScholarData = async (index_number) => {
         setLoading(true);
         setStartIndex(index_number);
-        const response =  await fetch(`${constant_data.backend_url}/search_scholar_data`,{
+        const response = await fetch(`${constant_data.backend_url}/search_scholar_data`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -51,11 +52,20 @@ function WannaBeResearcher() {
     useEffect(() => {
         fetchScholarData(1);
         fetch(`${constant_data.backend_url}/get_all_scholar_fields`).then(response => response.json()).then(data => {
-            setScholarFields(data.filter((value, index) => {
-                if (index <= 15) {
-                    return value;
-                }
-            }));
+            let temp_data = []
+            data.map((value, index) => {
+                if (value.toString().includes("/")) {
+                    let temp = value.split("/");
+                    temp.map((tvalue, index) => {
+                            temp_data.push(tvalue.toString().trim());
+
+
+                    });
+                } else temp_data.push(value);
+            });
+            const uniqueElements = [...new Set(temp_data)];
+            uniqueElements.sort()
+            setScholarFields(uniqueElements);
         })
     }, []);
     return (
@@ -67,7 +77,7 @@ function WannaBeResearcher() {
                     <ul className="space-y-2 font-medium">
                         <li>
                             <button
-                                    className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
 
                                 <h3 className="ms-3 text-3xl">Top 6 Categories </h3>
                             </button>
@@ -75,7 +85,7 @@ function WannaBeResearcher() {
                         {scholarFields.map((field) => (
                             <li key={field.toString()}>
                                 <button onClick={() => fetchScholarByCategory(field)}
-                                   className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                        className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                     <span className="flex-1 ms-3 whitespace-nowrap">{field}</span>
                                 </button>
                             </li>

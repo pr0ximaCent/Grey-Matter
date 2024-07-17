@@ -59,6 +59,7 @@ function JFilter({applyFilters ,filters, setFilters}) {
                 else temp_data.push(value);
             });
             const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
             setCategoryList(uniqueElements);
         });
         fetch(`${constant_data.backend_url}/get_all_journal_areas`).then(response => response.json()).then(data => {
@@ -73,6 +74,7 @@ function JFilter({applyFilters ,filters, setFilters}) {
                 else temp_data.push(value);
             });
             const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
             setAreaList(uniqueElements);
         });
         fetch(`${constant_data.backend_url}/get_all_journal_types`).then(response => response.json()).then(data => {

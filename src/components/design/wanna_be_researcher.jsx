@@ -69,7 +69,7 @@ function WannaBeResearcher() {
                             <button
                                     className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
 
-                                <h3 className="ms-3 text-3xl">Top 10 Categories </h3>
+                                <h3 className="ms-3 text-3xl">Top 6 Categories </h3>
                             </button>
                         </li>
                         {scholarFields.map((field) => (

@@ -95,10 +95,10 @@ function WannaBeResearcher() {
                 </div>
             </aside>
 
-            <div className="p-4 sm:ml-64 fixed">
+            <div className="p-4 sm:ml-64">
                 <div className="flex flex-wrap -mx-2">
                     {scholarData.map((benefit, index) => (
-                        <div key={index} className="sm:w-1/2 lg:w-1/3 px-2 mb-4">
+                        <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4">
                             <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col h-full">
                                 <div className="flex h-36 items-center justify-between p-4 border-b">
                                     <div className="flex items-center">
@@ -108,38 +108,67 @@ function WannaBeResearcher() {
                                             alt={benefit.name}
                                         />
                                         <div className="">
-                                            <a href={benefit.profile}
-                                               className="text-lg font-semibold text-blue-600 hover:underline">
+                                            <a
+                                                href={benefit.profile}
+                                                className="text-lg font-semibold text-blue-600 hover:underline"
+                                            >
                                                 {benefit.name}
                                             </a>
-                                            <p className="max-w-44 text-sm text-gray-800">{benefit.institution}</p>
+                                            <p className="max-w-44 text-sm text-gray-800">
+                                                {benefit.institution}
+                                            </p>
                                             <p className="text-sm text-gray-800">{benefit.country}</p>
                                         </div>
                                     </div>
                                     <div className="flex flex-col items-center">
-                                        <p className="text-sm font-semibold text-gray-800">H-Index Rankings</p>
-                                        <p className="text-xs text-gray-600">Institutional:
-                                            #{benefit.institutionalRanking}</p>
-                                        <p className="text-xs text-gray-600">Country: #{benefit.countryRanking}</p>
-                                        <p className="text-xs text-gray-600">Region: #{benefit.regionalRanking}</p>
-                                        <p className="text-xs text-gray-600">World: #{benefit.worldRanking}</p>
+                                        <p className="text-sm font-semibold text-gray-800 text-center">
+                                            H-Index Rankings
+                                        </p>
+                                        <p className="text-xs text-gray-600">
+                                            Institutional: #{benefit.institutionalRanking}
+                                        </p>
+                                        <p className="text-xs text-gray-600">
+                                            Country: #{benefit.countryRanking}
+                                        </p>
+                                        <p className="text-xs text-gray-600">
+                                            Region: #{benefit.regionalRanking}
+                                        </p>
+                                        <p className="text-xs text-gray-600">
+                                            World: #{benefit.worldRanking}
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 flex-grow">
                                     <div className="bg-orange-200 p-4 rounded-lg">
-                                        <h3 className="text-lg font-semibold text-gray-800">H-Index</h3>
+                                        <h3 className="text-lg font-semibold text-gray-800">
+                                            H-Index
+                                        </h3>
                                         <p className="text-gray-800">Total: {benefit.hIndexTotal}</p>
-                                        <p className="text-gray-800">Last 6 Years: {benefit.hIndexLast6Years}</p>
+                                        <p className="text-gray-800">
+                                            Last 6 Years: {benefit.hIndexLast6Years}
+                                        </p>
                                     </div>
                                     <div className="bg-blue-200 p-4 rounded-lg">
-                                        <h3 className="text-lg font-semibold text-gray-800">i10 Index</h3>
-                                        <p className="text-gray-800">Total: {benefit.i10IndexTotal}</p>
-                                        <p className="text-gray-800">Last 6 Years: {benefit.i10IndexLast6Years}</p>
+                                        <h3 className="text-lg font-semibold text-gray-800">
+                                            i10 Index
+                                        </h3>
+                                        <p className="text-gray-800">
+                                            Total: {benefit.i10IndexTotal}
+                                        </p>
+                                        <p className="text-gray-800">
+                                            Last 6 Years: {benefit.i10IndexLast6Years}
+                                        </p>
                                     </div>
                                     <div className="bg-purple-200 p-4 rounded-lg col-span-2">
-                                        <h3 className="text-lg font-semibold text-gray-800">Citations</h3>
-                                        <p className="text-gray-800">Total: {benefit.citationsTotal}</p>
-                                        <p className="text-gray-800">Last 6 Years: {benefit.citationsLast6Years}</p>
+                                        <h3 className="text-lg font-semibold text-gray-800">
+                                            Citations
+                                        </h3>
+                                        <p className="text-gray-800">
+                                            Total: {benefit.citationsTotal}
+                                        </p>
+                                        <p className="text-gray-800">
+                                            Last 6 Years: {benefit.citationsLast6Years}
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="p-4 border-t">

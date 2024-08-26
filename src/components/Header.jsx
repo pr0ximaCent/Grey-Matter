@@ -109,7 +109,7 @@ const Header = () => {
                   key={elem.id}
                   href={elem.url}
                   onClick={(event) => handleClick(event, elem.url)}
-                  className={`block relative font-code text-lg lg:text-sm uppercase text-n-1 transition-colors hover:text-color-1 px-4 py-2 lg:px-6 lg:py-4 ${
+                  className={`block relative font-code text-s lg:text-s uppercase text-n-1 transition-colors hover:text-color-1 px-4 py-2 lg:px-6 lg:py-4 ${
                     elem.url === location.hash ? "text-n-1" : "text-n-1/50"
                   } lg:leading-5 lg:hover:text-n-1 xl:px-8`}
                 >
@@ -122,7 +122,7 @@ const Header = () => {
           <div className="flex space-x-2 items-center">
             <a
               href="#signin"
-              className="text-gray-300 hover:text-white transition-colors duration-300 py-2 px-4 text-sm lg:text-xs font-medium uppercase"
+              className="text-gray-300 hover:text-white transition-colors duration-300 py-2 px-4 text-sm lg:text-s font-medium uppercase"
               onClick={handleLoginOpen}
             >
               Sign In
@@ -130,7 +130,7 @@ const Header = () => {
 
             <Button
               href="#login"
-              className="text-sm lg:text-xs font-medium h-8 lg:h-6 w-[15px] px-4 lg:px-6 transition-all duration-300 hover:bg-gradient-to-r hover:text-black"
+              className="text-s lg:text-s font-medium h-8 lg:h-6 w-[15px] px-4 lg:px-6 transition-all duration-300 hover:bg-gradient-to-r hover:text-black"
               onClick={handleSignupOpen}
             >
               Join!

@@ -12,7 +12,7 @@ const Benefits = () => {
     const [scholarData, setScholarData] = useState([]);
     const [startIndex, setStartIndex] = useState(1);
 
-    // eslint-disable-next-line no-unused-vars
+    
     const [loading, setLoading] = useState(false);
     const page_containers_count = 6;
 
@@ -46,19 +46,11 @@ const Benefits = () => {
     useEffect(() => {
         fetchScholarData(startIndex);
         fetch(`${constant_data.backend_url}/get_all_scholar_fields`).then(response => response.json()).then(data => {
-            // setSubjectData(data.filter((value, index) => {
-            //     if (index <= 15) {
-            //         return value;
-            //     }
-            // }));
+           
             setSubjectData(data);
         })
         fetch(`${constant_data.backend_url}/get_all_scholar_institutions`).then(response => response.json()).then(data => {
-            // setInstituteData(data.filter((value, index) => {
-            //     if (index <= 15) {
-            //         return value;
-            //     }
-            // }));
+          
             setInstituteData(data)
         })
 
@@ -85,18 +77,7 @@ const Benefits = () => {
         setSelectedSubject(e.target.value);
     };
 
-    // const filteredData = benefitData.filter((benefit) => {
-    //   const searchLower = searchTerm.toLowerCase();
-    //   return (
-    //     (benefit.name.toLowerCase().includes(searchLower) ||
-    //       benefit.institution.toLowerCase().includes(searchLower) ||
-    //       benefit.field.toLowerCase().includes(searchLower) ||
-    //       benefit.country.toLowerCase().includes(searchLower)) &&
-    //     (selectedInstitute === 'Institute' ||
-    //       benefit.institution === selectedInstitute) &&
-    //     (selectedSubject === 'Subject' || benefit.field.includes(selectedSubject))
-    //   );
-    // });
+  
 
     return (
         <div className="container mx-auto p-4">
@@ -106,7 +87,7 @@ const Benefits = () => {
                 Bangladesh Scientists Rankings 2024
             </h2>
 
-            {/* Filtering Options Row */}
+           
             <div className="flex justify-center items-center mb-4 space-x-4">
                 <select
                     value={selectedInstitute}
@@ -130,7 +111,7 @@ const Benefits = () => {
                 </select>
             </div>
 
-            {/* Search Bar Row */}
+            
             <div className="flex justify-center items-center mb-6">
                 <input
                     type="text"
@@ -149,7 +130,7 @@ const Benefits = () => {
                                 <div className="flex items-center">
                                     <img
                                         className="w-16 h-16 rounded-full mr-4"
-                                        src={benefit.image} // Replace with the actual image URL if available
+                                        src={benefit.image} 
                                         alt={benefit.name}
                                     />
                                     <div className="">

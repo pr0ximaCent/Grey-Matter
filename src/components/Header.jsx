@@ -13,8 +13,8 @@ const Header = () => {
   const navigate = useNavigate();
   const [signupOpen, setSignupOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
-  const [overlayOpen, setOverlayOpen] = useState(false); 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [overlayOpen, setOverlayOpen] = useState(false);
 
   useEffect(() => {
     if (location.hash) {
@@ -60,13 +60,13 @@ const Header = () => {
     } else {
       navigate("/");
     }
-    setMobileMenuOpen(false); 
-    setOverlayOpen(false); 
+    setMobileMenuOpen(false);
+    setOverlayOpen(false);
   };
 
   const handleMobileMenuToggle = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-    setOverlayOpen(!mobileMenuOpen); 
+    setOverlayOpen(!mobileMenuOpen);
   };
 
   const handleOverlayClick = () => {
@@ -81,7 +81,7 @@ const Header = () => {
           <a
             className="block w-[10rem] lg:w-[12rem] xl:mr-8 cursor-pointer"
             href="/"
-            onClick={(e) => e.preventDefault()} 
+            onClick={(e) => e.preventDefault()}
           >
             <div className="flex items-center" onClick={handleMobileMenuToggle}>
               <img
@@ -90,12 +90,12 @@ const Header = () => {
                 height={30}
                 alt="Grey Matter"
                 style={{
-                  filter: "drop-shadow(0 0 5px rgba(255, 255, 255, 0.09))",
+                  filter: "drop-shadow(0 0 6px rgba(255, 255, 255, 0.7))",
                 }}
               />
               <span
                 className="ml-1 text-n-1 text-lg lg:text-xl"
-                style={{ textShadow: "0 0 2px rgba(255, 255, 255, 0.5)" }}
+                style={{ textShadow: "0 0 5px rgba(255, 255, 255, 1)" }}
               >
                 Grey Matter
               </span>
@@ -143,7 +143,6 @@ const Header = () => {
         </div>
       </div>
 
-     
       {overlayOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 z-40"
@@ -151,7 +150,6 @@ const Header = () => {
         />
       )}
 
-     
       {mobileMenuOpen && (
         <nav className="fixed top-0 left-0 w-full h-full bg-n-8/90 backdrop-blur-sm z-50">
           <div className="flex flex-col items-center justify-center py-4 h-full">

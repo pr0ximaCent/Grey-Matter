@@ -9,7 +9,7 @@
 
 ## 🚨 Nota Bene
 
-This repository contains the code corresponding to a collaborative project for Hackathon run by the HackCSB team in partnership with Coding Shikhbe Bangladesh, Bangladesh's fastest-growing AI-powered EdTech Platform <a href="[https://www.youtube.com/@javascriptmastery/videos](https://hackcsb.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio)]" target="_blank"><b>[HackCSB]</b></a>.
+This repository contains the code corresponding to a collaborative project for Hackathon run by the HackCSB team in partnership with Coding Shikhbe Bangladesh, Bangladesh's fastest-growing AI-powered EdTech Platform <a href="https://hackcsb.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio" target="_blank"><b>[HackCSB]</b></a>.
 
 
 ## <a name="introduction">🤖 Introduction</a>
@@ -64,7 +64,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/pr0ximaCent/Grey-Matter.git
-cd Grey Matter
+cd Grey-Matter
 ```
 
 **Installation**
@@ -833,8 +833,7 @@ export default Roadmap;
 
 **Grey Matter** relies on data aggregated from various reputable sources to provide accurate and up-to-date information on researchers and academic journals. We would like to acknowledge and thank the following platforms for their valuable data:
 
-- **Site Name 1**: Provided data on researcher profiles, including their expertise, affiliations, and publication history.
-- **Site Name 2**: Supplied comprehensive information on academic journals, including impact factors, subject categories, and regional classifications.
-- **Site Name 3**: Offered insights into journals aligned with the United Nations' Sustainable Development Goals (SDGs).
-
+- **[AD Scientific Index](https://www.adscientificindex.com/?country_code=bd)**: Provided data on researcher profiles from Bangladesh, including their expertise, affiliations, and publication history.
+- **[SCImago Journal Rank](https://www.scimagojr.com/journalrank.php)**: Supplied comprehensive information on academic journals, including impact factors, subject categories, and regional classifications.
+  
 We deeply appreciate the contributions of these platforms, which play a crucial role in making **Grey Matter** a reliable resource for the academic community.

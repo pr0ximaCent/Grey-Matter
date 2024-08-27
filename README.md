@@ -50,6 +50,7 @@ This repository contains the code corresponding to a collaborative project for H
   - Designed with the needs of academics, researchers, and students in mind.
   - A valuable resource for research collaboration, journal submission, and academic networking.
 
+## <a name="quick-start">🤸 Quick Start</a>
 
 **Prerequisites**
 

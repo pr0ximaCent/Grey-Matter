@@ -66,10 +66,17 @@ The idea behind **Grey Matter** was inspired by the need to bridge the gap betwe
 
 ## <a name="accomplishments">🏆 Accomplishments we're proud of</a>
 
-- Successfully built a platform that highlights the research talent within Bangladesh and serves the global academic community.
-- Developed a seamless and intuitive user interface that enhances user experience.
-- Integrated real-time data access to ensure users have the most current information.
-- Managed to normalize and aggregate data from various sources effectively, maintaining high data integrity.
+- Successfully built a platform that highlights the research talent within Bangladesh and serves the global academic community.  
+  ![Research Talent Platform](./src/assets/collaboration/1.PNG)
+  <div align="center"><em>Snippets of Home Screen</em></div>
+- Developed a seamless and intuitive user interface that enhances user experience.  
+- Integrated real-time data access to ensure users have the most current information.  
+  ![Real-Time Data](./src/assets/collaboration/2.PNG)
+  <div align="center"><em>Snippets of Researchers Profile Screen</em></div>
+- Managed to normalize and aggregate data from various sources effectively, maintaining high data integrity.  
+  ![Data Integrity](./src/assets/collaboration/3.PNG)
+  <div align="center"><em>Snippets of Journal Ranking Screen</em></div>
+
 
 ## <a name="learn">🎓 What we learned</a>
 

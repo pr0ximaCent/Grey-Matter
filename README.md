@@ -7,8 +7,13 @@ This repository contains the code corresponding to a collaborative project for H
 3. 💡 [What it does](#features)
 4. 🛠️ [How we built it](#tech)
 5. 🚧 [Challenges we ran into](#challenges)
-6. 🤸 [Quick Start](#quick-start)
-7. 🔗 [Data Sources](#data-sources)
+6. 🏆 [Accomplishments we're proud of](#accomplishments)
+7. 🎓 [What we learned](#learn)
+8. 🤸 [Quick Start](#quick-start)
+9. 🔮 [What's next](#next)
+10. 🛠️ [Built With](#built-with)
+11. 🚀 [Try it out](#try)
+12. 🔗 [Data Sources](#data-sources)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -59,14 +64,14 @@ The idea behind **Grey Matter** was inspired by the need to bridge the gap betwe
 - Balancing performance optimization with the need to manage large datasets without compromising on speed or user experience.
 - Handling real-time data updates while ensuring the platform remained stable and responsive.
 
-## 🏆 Accomplishments we're proud of
+## <a name="accomplishments">🏆 Accomplishments we're proud of</a>
 
 - Successfully built a platform that highlights the research talent within Bangladesh and serves the global academic community.
 - Developed a seamless and intuitive user interface that enhances user experience.
 - Integrated real-time data access to ensure users have the most current information.
 - Managed to normalize and aggregate data from various sources effectively, maintaining high data integrity.
 
-## 🎓 What we learned
+## <a name="learn">🎓 What we learned</a>
 
 - The complexities involved in data integration and ensuring data consistency across multiple sources.
 - Techniques for optimizing the performance of web applications, particularly when dealing with large datasets.
@@ -106,18 +111,18 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to preview the project.
 
-## 🔮 What's next
+## <a name="next">🔮 What's next</a>
 
 Moving forward, we plan to expand **Grey Matter** by including more features, such as personalized researcher recommendations, integration with academic networking platforms, and real-time collaboration tools. We also aim to broaden our data sources to include more countries and disciplines, making the platform even more comprehensive.
 
-## 👥 Team Members
+## <a name="team-members">👥 Team Members</a>
 
 - **[Sabik Aftahee]([https://github.com/YourGitHubUsername](https://github.com/pr0ximaCent))**
 - **[Md. Refaj Hossan]([https://github.com/TeamMember2GitHubUsername](https://github.com/RJ-Hossan))**
 - **[Abu Md. Masbah Uddin]([https://github.com/TeamMember3GitHubUsername](https://github.com/ma5bah))**
 - **[Tofayel Ahmmed Babu]([https://github.com/TeamMember4GitHubUsername](https://github.com/5pace4))**
 
-## 🛠️ Built With
+## <a name="built-with">🛠️ Built With</a>
 
 - **React.js**: For building the interactive user interface.
 - **Tailwind CSS**: For responsive and custom-styled components.
@@ -125,7 +130,7 @@ Moving forward, we plan to expand **Grey Matter** by including more features, su
 - **SCImago Journal Rank**: For comprehensive journal data.
 - **AD Scientific Index**: For detailed researcher profiles.
 
-## 🚀 Try it out
+## <a name="try">🚀 Try it out</a>
 
 Check out **Grey Matter** in action: [Live Demo](http://your-demo-link.com)
 

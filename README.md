@@ -139,7 +139,7 @@ Moving forward, we plan to expand **Grey Matter** by including more features, su
 
 ## <a name="try">🚀 Try it out</a>
 
-Check out **Grey Matter** in action: [Live Demo](http://your-demo-link.com)
+Check out **Grey Matter** in action: [Live Demo](https://grey-matter-omega.vercel.app/)
 
 
 ## <a name="data-sources">🔗 Data Sources</a>

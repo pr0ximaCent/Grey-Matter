@@ -1,74 +1,109 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/B91wc5dCEBA" target="_blank">
-      <img src="https://i.ibb.co/Kqdv8j1/Image-from.png" alt="Project Banner">
-    </a>
-  <br />
+This repository contains the code corresponding to a collaborative project for Hackathon run by the HackCSB team in partnership with Coding Shikhbe Bangladesh, Bangladesh's fastest-growing AI-powered EdTech Platform <a href="https://hackcsb.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio" target="_blank"><b>[HackCSB]</b></a>. You can visit the corresponding website from this link <a href="https://grey-matter-omega.vercel.app/" target="_blank"><b>[Grey Matter]</b></a>.
 
-  <div>
-    <img src="https://img.shields.io/badge/-Vite-black?style=for-the-badge&logoColor=white&logo=vite&color=646CFF" alt="vite" />
-    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
 
-  <h3 align="center">Modern UI/UX website</h3>
+![greymatter](https://github.com/user-attachments/assets/41675e3d-6211-45f9-a889-8f0d469fb2a2)
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube.
-    </div>
-</div>
 
 ## 📋 <a name="table">Table of Contents</a>
 
 1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
-
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/B91wc5dCEBA" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+2. 🎨 [Inspiration](#inspiration)
+3. 💡 [What it does](#features)
+4. 🛠️ [How we built it](#tech)
+5. 🚧 [Challenges we ran into](#challenges)
+6. 🏆 [Accomplishments we're proud of](#accomplishments)
+7. 🎓 [What we learned](#learn)
+8. 🤸 [Quick Start](#quick-start)
+9. 🔮 [What's next](#next)
+10. 🛠️ [Built With](#built-with)
+11. 🚀 [Try it out](#try)
+12. 🔗 [Data Sources](#data-sources)
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Grey Matter - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.
+**Grey Matter** is a comprehensive platform designed to facilitate the discovery of top-tier researchers from Bangladesh and provide detailed insights into academic journals worldwide. Developed using **React JS** and **Tailwind CSS**, **Express JS** & **Vite**. This website serves as an essential tool for novice researchers, academic professionals, students, and researchers seeking to connect with influential figures in their fields or explore journals by various key metrics. Whether you're looking to collaborate with leading researchers or find journals that align with specific Sustainable Development Goals (SDGs), **Grey Matter** offers a streamlined, user-friendly experience.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
+## <a name="inspiration">🎨 Inspiration</a>
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+The idea behind **Grey Matter** was inspired by the need to bridge the gap between researchers in Bangladesh and the global academic community. We saw, upon stepping into the vast world of reserch, many of us become clueless. We have no visible guidelines about the Know-How's of research, no dedicated platform to learn about jounal & conferences and of course, no resource to learn about the biggest academic brains of Bangladesh in different sectors. They remain in the shadows. We say no to these and tried to bring the brains to the limelight. We aim to close that knowledge gap and that feeling of hopelessness. when  We recognized the challenges that students, academics, and professionals face when trying to find the right collaborators or access detailed journal information. Our aim was to create a platform that not only highlights the remarkable talent within Bangladesh but also provides a powerful tool for discovering academic resources worldwide.
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## <a name="features">💡 What it does</a>
 
-- Vite
-- React.js
-- Tailwind CSS
+- **Researcher Database**: 
+  - Access an extensive directory of top-class researchers exclusively from Bangladesh. The first dedicated platform built for the cause. 
+  - Filter and search researchers based on various criteria including expertise, affiliation, and research impact.
 
-## <a name="features">🔋 Features</a>
+- **Global Journal Search**: 
+  - Explore a vast array of academic journals worldwide with detailed information.
+  - Search by region, subject category, impact factor, and alignment with Sustainable Development Goals (SDGs).
+    
+- **Research Roadmaps and Guidelines**: 
+  - Access comprehensive research roadmaps tailored to novice researchers.
+  - A complete & detailed guideline of research know-Hows which stems from beginner friendly to intermediate level. Idea generation, websites, usual practises, ethical standards, Impact factor, choosing topic, writing the paper & publishing it.
+  - Follow step-by-step guidelines to understand the research process, from literature review to publication.
+  - Utilize tools and templates to organize research objectives, methodologies, and timelines.
+  - Stay updated on ethical standards, citation practices, and data management requirements for a successful research journey.
 
-👉 **Beautiful Sections**: Includes hero, services, features, how to use, roadmap, pricing, footer, and header.
+- **User-Friendly Interface**: 
+  - Intuitive and responsive design powered by React JS and Tailwind CSS.
+  - Seamless navigation across different sections, ensuring a smooth user experience.
 
-👉 **Parallax Animations**: Engaging effects triggered by mouse movement and scrolling
+- **Advanced Search Filters**: 
+  - Utilize comprehensive search filters to find the most relevant researchers and journals.
+  - Refine your search results with ease, thanks to the platform's robust filtering options.
 
-👉 **Complex UI Geometry**: Utilizes tailwindcss for intricate shapes like circular feature displays, grid lines, and side lines.
+- **Real-Time Data Access**: 
+  - Stay updated with the latest information on researchers and journals.
+  - Real-time updates ensure that the platform always reflects the most current data.
 
-👉 **Latest UI Trends**: Incorporates modern design elements such as bento grids.
+- **Tailored for Academia**: 
+  - Designed with the needs of academics, researchers, and students in mind.
+  - A valuable resource for research collaboration, journal submission, and academic networking.
 
-👉 **Cool Gradients**: Enhances visuals with stylish gradients using Tailwind CSS for cards, buttons, etc.
+## <a name="tech">🛠️ How we built it</a>
 
-👉 **Responsive**: Ensures seamless functionality and aesthetics across all devices
+- Utilized **React JS** for developing the dynamic and interactive frontend.
+- Employed **Tailwind CSS** to create a responsive and visually appealing design.
+- Utilised **Express JS** for efficient backend data connection.
+- Initialized the project with **Vite** to ensure fast development and optimized build processes.
+- Integrated data from **SCImago Journal Rank** and **AD Scientific Index** for comprehensive and reliable information.
+- Implemented advanced search and filtering functionalities to handle large datasets efficiently.
 
-and many more, including code architecture and reusability
+## <a name="challenges">🚧 Challenges we ran into</a>
+
+- Aggregating and normalizing data from multiple sources to maintain consistency and accuracy.
+- Ensuring that the search and filtering mechanisms were both powerful and user-friendly.
+- Balancing performance optimization with the need to manage large datasets without compromising on speed or user experience.
+- Handling real-time data updates while ensuring the platform remained stable and responsive.
+- Making it responsive for various devices.
+- Implementing a complex yet smooth Front-End design for the website that has a lot of things going in the background.
+- Maintaining the color code & standard throughout the website. 
+
+## <a name="accomplishments">🏆 Accomplishments we're proud of</a>
+
+- Successfully built a platform that highlights the research talent within Bangladesh and serves the global academic community.  
+  ![Research Talent Platform](./src/assets/collaboration/1.PNG)
+  <div align="center"><em>Snippets of Home Screen</em></div>
+- Integrated a comprehensive, beginner-to-intermediate research guideline, covering everything from idea generation and topic selection to ethical standards, impact factors, and publishing.
+- Developed a seamless and intuitive user interface that enhances user experience.  
+- Integrated real-time data access to ensure users have the most current information.  
+  ![Real-Time Data](./src/assets/collaboration/2.PNG)
+  <div align="center"><em>Snippets of Researchers Profile Screen</em></div>
+- Managed to normalize and aggregate data from various sources effectively, maintaining high data integrity.  
+  ![Data Integrity](./src/assets/collaboration/3.PNG)
+  <div align="center"><em>Snippets of Journal Ranking Screen</em></div>
+
+
+## <a name="learn">🎓 What we learned</a>
+
+- The complexities involved in data integration and ensuring data consistency across multiple sources.
+- The hardships of creating a complex yet smooth functioning design integration.
+- Techniques for optimizing the performance of web applications, particularly when dealing with large datasets from different sources.
+- The importance of user-centric design in creating a platform that is both functional and easy to navigate.
+- Techniques of making a website responsive to different devices maintaining the previous design standards.
+- Effective collaboration and task management within a multidisciplinary team to achieve project goals.
 
 ## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
 
 **Prerequisites**
 
@@ -81,8 +116,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/JavaScript-Mastery-Pro/Grey Matter.git
-cd Grey Matter
+git clone https://github.com/pr0ximaCent/Grey-Matter.git
+cd Grey-Matter
 ```
 
 **Installation**
@@ -99,780 +134,38 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+Open [http://localhost:5173](http://localhost:5173) in your browser to preview the project.
 
-## <a name="snippets">🕸️ Snippets</a>
+## <a name="next">🔮 What's next</a>
 
-<details>
-<summary><code>.vscode/settings.json</code></summary>
+Moving forward, we plan to expand **Grey Matter** by including more features, such as personalized researcher recommendations, integration with academic networking platforms, and real-time collaboration tools. We also aim to broaden our data sources to include more countries and disciplines, making the platform even more comprehensive.
 
-```json
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit"
-  },
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.jsxSingleQuote": false,
-  "prettier.trailingComma": "es5",
-  "prettier.arrowParens": "always",
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  }
-}
-```
+## <a name="team-members">👥 Team Members</a>
 
-</details>
+- **[Sabik Aftahee](https://github.com/pr0ximaCent)**
+- **[Abu Md. Masbah Uddin](https://github.com/ma5bah)**
+- **[Md. Refaj Hossan](https://github.com/RJ-Hossan)**
+- **[Tofayel Ahmmed Babu](https://github.com/5pace4)**
 
-<details>
-<summary><code>tailwind.config.js</code></summary>
+## <a name="built-with">🛠️ Built With</a>
 
-```javascript
-/** @type {import('tailwindcss').Config} */
-import { fontFamily } from "tailwindcss/defaultTheme";
-import plugin from "tailwindcss/plugin";
+- **React.js**: For building the interactive user interface.
+- **Tailwind CSS**: For responsive and custom-styled components.
+- **Express JS**: For backend data streamlining & maintaining server requests, routing.
+- **Vite**: For fast development and optimized build processes.
+- **SCImago Journal Rank**: For comprehensive journal data.
+- **AD Scientific Index**: For detailed researcher profiles.
 
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./public/assets/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        color: {
-          1: "#AC6AFF",
-          2: "#FFC876",
-          3: "#FF776F",
-          4: "#7ADB78",
-          5: "#858DFF",
-          6: "#FF98E2",
-        },
-        stroke: {
-          1: "#26242C",
-        },
-        n: {
-          1: "#FFFFFF",
-          2: "#CAC6DD",
-          3: "#ADA8C3",
-          4: "#757185",
-          5: "#3F3A52",
-          6: "#252134",
-          7: "#15131D",
-          8: "#0E0C15",
-          9: "#474060",
-          10: "#43435C",
-          11: "#1B1B2E",
-          12: "#2E2A41",
-          13: "#6C7275",
-        },
-      },
-      fontFamily: {
-        sans: ["var(--font-sora)", ...fontFamily.sans],
-        code: "var(--font-code)",
-        grotesk: "var(--font-grotesk)",
-      },
-      letterSpacing: {
-        tagline: ".15em",
-      },
-      spacing: {
-        0.25: "0.0625rem",
-        7.5: "1.875rem",
-        15: "3.75rem",
-      },
-      opacity: {
-        15: ".15",
-      },
-      transitionDuration: {
-        DEFAULT: "200ms",
-      },
-      transitionTimingFunction: {
-        DEFAULT: "linear",
-      },
-      zIndex: {
-        1: "1",
-        2: "2",
-        3: "3",
-        4: "4",
-        5: "5",
-      },
-      borderWidth: {
-        DEFAULT: "0.0625rem",
-      },
-      backgroundImage: {
-        "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",
-        "conic-gradient":
-          "conic-gradient(from 225deg, #FFC876, #79FFF7, #9F53FF, #FF98E2, #FFC876)",
-        "benefit-card-1": "url(assets/benefits/card-1.svg)",
-        "benefit-card-2": "url(assets/benefits/card-2.svg)",
-        "benefit-card-3": "url(assets/benefits/card-3.svg)",
-        "benefit-card-4": "url(assets/benefits/card-4.svg)",
-        "benefit-card-5": "url(assets/benefits/card-5.svg)",
-        "benefit-card-6": "url(assets/benefits/card-6.svg)",
-      },
-    },
-  },
-  plugins: [
-    plugin(function ({ addBase, addComponents, addUtilities }) {
-      addBase({});
-      addComponents({
-        ".container": {
-          "@apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem]":
-            {},
-        },
-        ".h1": {
-          "@apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem]":
-            {},
-        },
-        ".h2": {
-          "@apply text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-tight":
-            {},
-        },
-        ".h3": {
-          "@apply text-[2rem] leading-normal md:text-[2.5rem]": {},
-        },
-        ".h4": {
-          "@apply text-[2rem] leading-normal": {},
-        },
-        ".h5": {
-          "@apply text-2xl leading-normal": {},
-        },
-        ".h6": {
-          "@apply font-semibold text-lg leading-8": {},
-        },
-        ".body-1": {
-          "@apply text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8":
-            {},
-        },
-        ".body-2": {
-          "@apply font-light text-[0.875rem] leading-6 md:text-base": {},
-        },
-        ".caption": {
-          "@apply text-sm": {},
-        },
-        ".tagline": {
-          "@apply font-grotesk font-light text-xs tracking-tagline uppercase":
-            {},
-        },
-        ".quote": {
-          "@apply font-code text-lg leading-normal": {},
-        },
-        ".button": {
-          "@apply font-code text-xs font-bold uppercase tracking-wider": {},
-        },
-      });
-      addUtilities({
-        ".tap-highlight-color": {
-          "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)",
-        },
-      });
-    }),
-  ],
-};
-```
+## <a name="try">🚀 Try it out</a>
 
-</details>
+Check out **Grey Matter** in action: [Live Demo](https://grey-matter-omega.vercel.app/)
 
-<details>
-<summary><code>index.css</code></summary>
 
-```css
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+## <a name="data-sources">🔗 Data Sources</a>
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+**Grey Matter** relies on data aggregated from various reputable sources to provide accurate and up-to-date information on researchers and academic journals. We would like to acknowledge and thank the following platforms for their valuable data:
 
-:root {
-  --font-sora: "Sora", sans-serif;
-  --font-code: "Source Code Pro", monospace;
-  --font-grotesk: "Space Grotesk", sans-serif;
-}
-
-* {
-  scroll-behavior: smooth;
-}
-
-@layer base {
-  body {
-    @apply font-sans bg-n-8 text-n-1 text-base;
-  }
-}
-
-.rotate-45 {
-  @apply rotate-[45deg];
-}
-
-.rotate-90 {
-  @apply rotate-[90deg];
-}
-
-.rotate-135 {
-  @apply rotate-[135deg];
-}
-
-.rotate-180 {
-  @apply rotate-[180deg];
-}
-
-.rotate-225 {
-  @apply rotate-[225deg];
-}
-
-.rotate-270 {
-  @apply rotate-[270deg];
-}
-
-.rotate-315 {
-  @apply rotate-[315deg];
-}
-
-.rotate-360 {
-  @apply rotate-[360deg];
-}
-
-.-rotate-45 {
-  @apply rotate-[-45deg];
-}
-
-.-rotate-90 {
-  @apply rotate-[-90deg];
-}
-
-.-rotate-135 {
-  @apply rotate-[-135deg];
-}
-
-.-rotate-180 {
-  @apply rotate-[-180deg];
-}
-
-.-rotate-225 {
-  @apply rotate-[-225deg];
-}
-
-.-rotate-270 {
-  @apply rotate-[-270deg];
-}
-
-.-rotate-315 {
-  @apply rotate-[-315deg];
-}
-
-.-rotate-360 {
-  @apply rotate-[-360deg];
-}
-```
-
-</details>
-
-<details>
-<summary><code>constants/index.js</code></summary>
-
-```javascript
-import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
-  chromecast,
-  disc02,
-  discord,
-  discordBlack,
-  facebook,
-  figma,
-  file02,
-  framer,
-  homeSmile,
-  instagram,
-  notification2,
-  notification3,
-  notification4,
-  notion,
-  photoshop,
-  plusSquare,
-  protopie,
-  raindrop,
-  recording01,
-  recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
-  searchMd,
-  slack,
-  sliders04,
-  telegram,
-  twitter,
-  yourlogo,
-} from "../../public/assets";
-
-export const navigation = [
-  {
-    id: "0",
-    title: "Features",
-    url: "#features",
-  },
-  {
-    id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
-  },
-];
-
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
-
-export const notificationImages = [notification4, notification3, notification2];
-
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
-export const Grey MatterServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
-];
-
-export const Grey MatterServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
-
-export const roadmap = [
-  {
-    id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
-    colorful: true,
-  },
-  {
-    id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap2,
-  },
-  {
-    id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
-  },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
-  },
-];
-
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
-export const collabContent = [
-  {
-    id: "0",
-    title: "Seamless Integration",
-    text: collabText,
-  },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
-];
-
-export const collabApps = [
-  {
-    id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
-  },
-  {
-    id: "1",
-    title: "Notion",
-    icon: notion,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: discord,
-    width: 36,
-    height: 28,
-  },
-  {
-    id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
-  },
-  {
-    id: "4",
-    title: "Photoshop",
-    icon: photoshop,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "5",
-    title: "Protopie",
-    icon: protopie,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
-    height: 34,
-  },
-  {
-    id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
-  },
-];
-
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-];
-
-export const benefits = [
-  {
-    id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-    light: true,
-  },
-  {
-    id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
-    light: true,
-  },
-  {
-    id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-  },
-];
-
-export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
-];
-```
-
-</details>
-
-<details>
-<summary><code>components/Section.jsx</code></summary>
-
-```javascript
-import SectionSvg from "../../public/assets/svg/SectionSvg";
-
-const Section = ({
-  className,
-  id,
-  crosses,
-  crossesOffset,
-  customPaddings,
-  children,
-}) => (
-  <div
-    id={id}
-    className={`relative 
-    ${
-      customPaddings ||
-      `py-10 lg:py-16 xl:py-20 ${crosses ? "lg:py-32 xl:py-40" : ""}`
-    } ${className || ""}`}
-  >
-    {children}
-
-    <div className="hidden absolute top-0 left-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:left-7.5 xl:left-10" />
-    <div className="hidden absolute top-0 right-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:right-7.5 xl:right-10" />
-
-    {crosses && (
-      <>
-        <div
-          className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${
-            crossesOffset && crossesOffset
-          } pointer-events-none lg:block xl:left-10 right-10`}
-        />
-        <SectionSvg crossesOffset={crossesOffset} />
-      </>
-    )}
-  </div>
-);
-
-export default Section;
-```
-
-</details>
-
-<details>
-<summary><code>components/Roadmap.jsx</code></summary>
-
-```javascript
-import Button from "./Button";
-import Heading from "./Heading";
-import Section from "./Section";
-import Tagline from "./TagLine";
-import { roadmap } from "../constants";
-import { check2, grid, loading1 } from "../../public/assets";
-import { Gradient } from "./design/Roadmap";
-
-const Roadmap = () => (
-  <Section className="overflow-hidden" id="roadmap">
-    <div className="container md:pb-10">
-      <Heading tag="Ready to get started" title="What we’re working on" />
-
-      <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-        {roadmap.map((item) => {
-          const status = item.status === "done" ? "Done" : "In progress";
-
-          return (
-            <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
-                item.colorful ? "bg-conic-gradient" : "bg-n-6"
-              }`}
-              key={item.id}
-            >
-              <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
-                <div className="absolute top-0 left-0 max-w-full">
-                  <img
-                    className="w-full"
-                    src={grid}
-                    width={550}
-                    height={550}
-                    alt="Grid"
-                  />
-                </div>
-                <div className="relative z-1">
-                  <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
-                    <Tagline>{item.date}</Tagline>
-
-                    <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
-                      <img
-                        className="mr-2.5"
-                        src={item.status === "done" ? check2 : loading1}
-                        width={16}
-                        height={16}
-                        alt={status}
-                      />
-                      <div className="tagline">{status}</div>
-                    </div>
-                  </div>
-
-                  <div className="mb-10 -my-10 -mx-15">
-                    <img
-                      className="w-full"
-                      src={item.imageUrl}
-                      width={628}
-                      height={426}
-                      alt={item.title}
-                    />
-                  </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
-                  <p className="body-2 text-n-4">{item.text}</p>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-
-        <Gradient />
-      </div>
-
-      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
-      </div>
-    </div>
-  </Section>
-);
-
-export default Roadmap;
-```
-
-</details>
-
-## <a name="links">🔗 Links</a>
-
-- [Assets](https://drive.google.com/file/d/1JKzwPl_hnpjIlNbwfjMagb4HosxnyXbf/view?usp=sharing)
-- [Design](https://drive.google.com/file/d/15WJMOchujvaQ7Kg9e0nGeGR7G7JOeX1K/view?usp=sharing)
-- [Absolute Relative Positioning](https://css-tricks.com/absolute-positioning-inside-relative-positioning/)
-- [Live Website](https://jsm-Grey Matter.com/)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js 14 Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsmastery.pro/next14" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/557837ce-f612-4530-ab24-189e75133c71" alt="Project Banner">
-</a>
-
-<br />
-<br />
-
-**Accelerate your professional journey with the Expert Training program**
-
-And if you're hungry for more than just a course and want to understand how we learn and tackle tech challenges, hop into our personalized masterclass. We cover best practices, different web skills, and offer mentorship to boost your confidence. Let's learn and grow together!
-
-<a href="https://www.jsmastery.pro/masterclass" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/fed352ad-f27b-400d-9b8f-c7fe628acb84" alt="Project Banner">
-</a>
-
-#
+- **[AD Scientific Index](https://www.adscientificindex.com/?country_code=bd)**: Provided data on researcher profiles from Bangladesh, including their expertise, affiliations, and publication history.
+- **[SCImago Journal Rank](https://www.scimagojr.com/journalrank.php)**: Supplied comprehensive information on academic journals, including impact factors, subject categories, and regional classifications.
+  
+We deeply appreciate the contributions of these platforms, which play a crucial role in making **Grey Matter** a reliable resource for the academic community.

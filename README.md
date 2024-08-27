@@ -17,21 +17,28 @@ This repository contains the code corresponding to a collaborative project for H
 
 ## <a name="introduction">🤖 Introduction</a>
 
-**Grey Matter** is a comprehensive platform designed to facilitate the discovery of top-tier researchers from Bangladesh and provide detailed insights into academic journals worldwide. Developed using **React JS** and **Tailwind CSS**, this website serves as an essential tool for academic professionals, students, and researchers seeking to connect with influential figures in their fields or explore journals by various key metrics. Whether you're looking to collaborate with leading researchers or find journals that align with specific Sustainable Development Goals (SDGs), **Grey Matter** offers a streamlined, user-friendly experience.
+**Grey Matter** is a comprehensive platform designed to facilitate the discovery of top-tier researchers from Bangladesh and provide detailed insights into academic journals worldwide. Developed using **React JS** and **Tailwind CSS**, **Express JS** & **Vite**. This website serves as an essential tool for novice researchers, academic professionals, students, and researchers seeking to connect with influential figures in their fields or explore journals by various key metrics. Whether you're looking to collaborate with leading researchers or find journals that align with specific Sustainable Development Goals (SDGs), **Grey Matter** offers a streamlined, user-friendly experience.
 
 ## <a name="inspiration">🎨 Inspiration</a>
 
-The idea behind **Grey Matter** was inspired by the need to bridge the gap between researchers in Bangladesh and the global academic community. We recognized the challenges that students, academics, and professionals face when trying to find the right collaborators or access detailed journal information. Our aim was to create a platform that not only highlights the remarkable talent within Bangladesh but also provides a powerful tool for discovering academic resources worldwide.
+The idea behind **Grey Matter** was inspired by the need to bridge the gap between researchers in Bangladesh and the global academic community. We saw, upon stepping into the vast world of reserch, many of us become clueless. We have no visible guidelines about the Know-How's of research, no dedicated platform to learn about jounal & conferences and of course, no resource to learn about the biggest academic brains of Bangladesh in different sectors. They remain in the shadows. We say no to these and tried to bring the brains to the limelight. We aim to close that knowledge gap and that feeling of hopelessness. when  We recognized the challenges that students, academics, and professionals face when trying to find the right collaborators or access detailed journal information. Our aim was to create a platform that not only highlights the remarkable talent within Bangladesh but also provides a powerful tool for discovering academic resources worldwide.
 
 ## <a name="features">💡 What it does</a>
 
 - **Researcher Database**: 
-  - Access an extensive directory of top-class researchers from Bangladesh.
+  - Access an extensive directory of top-class researchers exclusively from Bangladesh. The first dedicated platform built for the cause. 
   - Filter and search researchers based on various criteria including expertise, affiliation, and research impact.
 
 - **Global Journal Search**: 
   - Explore a vast array of academic journals worldwide with detailed information.
   - Search by region, subject category, impact factor, and alignment with Sustainable Development Goals (SDGs).
+    
+- **Research Roadmaps and Guidelines**: 
+  - Access comprehensive research roadmaps tailored to novice researchers.
+  - A complete & detailed guideline of research know-Hows which stems from beginner friendly to intermediate level. Idea generation, websites, usual practises, ethical standards, Impact factor, choosing topic, writing the paper & publishing it.
+  - Follow step-by-step guidelines to understand the research process, from literature review to publication.
+  - Utilize tools and templates to organize research objectives, methodologies, and timelines.
+  - Stay updated on ethical standards, citation practices, and data management requirements for a successful research journey.
 
 - **User-Friendly Interface**: 
   - Intuitive and responsive design powered by React JS and Tailwind CSS.
@@ -53,6 +60,7 @@ The idea behind **Grey Matter** was inspired by the need to bridge the gap betwe
 
 - Utilized **React JS** for developing the dynamic and interactive frontend.
 - Employed **Tailwind CSS** to create a responsive and visually appealing design.
+- Utilised **Express JS** for efficient backend data connection.
 - Initialized the project with **Vite** to ensure fast development and optimized build processes.
 - Integrated data from **SCImago Journal Rank** and **AD Scientific Index** for comprehensive and reliable information.
 - Implemented advanced search and filtering functionalities to handle large datasets efficiently.
@@ -63,12 +71,16 @@ The idea behind **Grey Matter** was inspired by the need to bridge the gap betwe
 - Ensuring that the search and filtering mechanisms were both powerful and user-friendly.
 - Balancing performance optimization with the need to manage large datasets without compromising on speed or user experience.
 - Handling real-time data updates while ensuring the platform remained stable and responsive.
+- Making it responsive for various devices.
+- Implementing a complex yet smooth Front-End design for the website that has a lot of things going in the background.
+- Maintaining the color code & standard throughout the website. 
 
 ## <a name="accomplishments">🏆 Accomplishments we're proud of</a>
 
 - Successfully built a platform that highlights the research talent within Bangladesh and serves the global academic community.  
   ![Research Talent Platform](./src/assets/collaboration/1.PNG)
   <div align="center"><em>Snippets of Home Screen</em></div>
+- Integrated a comprehensive, beginner-to-intermediate research guideline, covering everything from idea generation and topic selection to ethical standards, impact factors, and publishing.
 - Developed a seamless and intuitive user interface that enhances user experience.  
 - Integrated real-time data access to ensure users have the most current information.  
   ![Real-Time Data](./src/assets/collaboration/2.PNG)
@@ -81,8 +93,10 @@ The idea behind **Grey Matter** was inspired by the need to bridge the gap betwe
 ## <a name="learn">🎓 What we learned</a>
 
 - The complexities involved in data integration and ensuring data consistency across multiple sources.
-- Techniques for optimizing the performance of web applications, particularly when dealing with large datasets.
+- The hardships of creating a complex yet smooth functioning design integration.
+- Techniques for optimizing the performance of web applications, particularly when dealing with large datasets from different sources.
 - The importance of user-centric design in creating a platform that is both functional and easy to navigate.
+- Techniques of making a website responsive to different devices maintaining the previous design standards.
 - Effective collaboration and task management within a multidisciplinary team to achieve project goals.
 
 ## <a name="quick-start">🤸 Quick Start</a>
@@ -133,6 +147,7 @@ Moving forward, we plan to expand **Grey Matter** by including more features, su
 
 - **React.js**: For building the interactive user interface.
 - **Tailwind CSS**: For responsive and custom-styled components.
+- **Express JS**: For backend data streamlining & maintaining server requests, routing.
 - **Vite**: For fast development and optimized build processes.
 - **SCImago Journal Rank**: For comprehensive journal data.
 - **AD Scientific Index**: For detailed researcher profiles.

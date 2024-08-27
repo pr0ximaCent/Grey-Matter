@@ -9,7 +9,7 @@
 
 ## 🚨 Nota Bene
 
-This repository contains the code corresponding to a collaborative project for Hackathon run by the HackCSB team in partnership with Coding Shikhbe Bangladesh, Bangladesh's fastest-growing AI-powered EdTech Platform <a href="[https://www.youtube.com/@javascriptmastery/videos](https://hackcsb.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio)" target="_blank"><b>[HackCSB]</b></a>.
+This repository contains the code corresponding to a collaborative project for Hackathon run by the HackCSB team in partnership with Coding Shikhbe Bangladesh, Bangladesh's fastest-growing AI-powered EdTech Platform <a href="[https://www.youtube.com/@javascriptmastery/videos](https://hackcsb.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio)]" target="_blank"><b>[HackCSB]</b></a>.
 
 
 ## <a name="introduction">🤖 Introduction</a>

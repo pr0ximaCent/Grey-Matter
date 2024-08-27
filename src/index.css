@@ -22,18 +22,18 @@
 @keyframes drop {
   0% {
     top: -50%;
-    opacity: 1; /* Fully visible at the start */
+    opacity: 1; 
   }
   50% {
-    opacity: 1; /* Remain visible in the middle */
+    opacity: 1;
   }
   75% {
-    top: 75%; /* Gradually move down */
-    opacity: 0.7; /* Start fading out */
+    top: 75%; 
+    opacity: 0.7; 
   }
   100% {
-    top: 110%; /* Move below the viewport */
-    opacity: 0; /* Fade out completely */
+    top: 110%; 
+    opacity: 0; 
   }
 }
 
@@ -46,15 +46,14 @@
 @layer base {
   body {
     font-family: 'Sora', sans-serif;
-    /* Set your preferred font family */
+  
     background: linear-gradient(180deg,
         #101728 0%,
         #39226d 30%,
         rgb(21, 10, 45) 70%,
         #1D232A 100%);
-    /* Gradient background from #111827 to a lighter shade */
+    
     color: #d6cb65;
-    /* Set your preferred text color */
     scroll-behavior: smooth;
   }
 }

@@ -19,12 +19,12 @@ const SignUpModal = ({ open, onClose }) => {
       styles={{
         modal: {
           borderRadius: '8px',
-          maxWidth: '600px', // Adjust maximum width as needed
-          maxHeight: '80vh', // Adjust maximum height as needed
-          backgroundColor: '#1a202c', // Dark background color
-          color: '#ffffff', // Text color
+          maxWidth: '600px', 
+          maxHeight: '80vh',
+          backgroundColor: '#1a202c', 
+          color: '#ffffff', 
           padding: '20px',
-          position: 'relative', // Ensure the modal respects its content's height
+          position: 'relative', 
         },
       }}
       overlayClassName="customOverlay"

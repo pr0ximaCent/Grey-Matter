@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Grid,
   Paper,
@@ -18,22 +18,21 @@ import {
 } from "@mui/material";
 import "../JournalTable.css";
 import data from "./data.json";
-import JFilter from "./JFilter"; // Import JFilter component
+import JFilter from "./JFilter"; 
 
 function JournalTable() {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(25);
-  const [filteredData, setFilteredData] = useState(data); // State to hold filtered data
-  const [selectedRow, setSelectedRow] = useState(null); // Track selected row for popover
-  const [anchorEl, setAnchorEl] = useState(null); // Anchor element for popover positioning
-
-  // State to hold search query
+  const [filteredData, setFilteredData] = useState(data); 
+  const [selectedRow, setSelectedRow] = useState(null); 
+  const [anchorEl, setAnchorEl] = useState(null);
+ 
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Function to apply filters from JFilter component
+  
   const applyFilters = (filters) => {
     let filtered = data.filter((row) => {
-      // Apply filtering based on selected filter criteria
+      
       if (filters.subjectArea !== "All" && row.Areas !== filters.subjectArea)
         return false;
       if (
@@ -53,20 +52,20 @@ function JournalTable() {
       return true;
     });
 
-    // Update filtered data and reset pagination
+    
     setFilteredData(filtered);
     setPage(0);
   };
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
-    setSelectedRow(null); // Reset selected row when changing page
+    setSelectedRow(null); 
   };
 
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
-    setSelectedRow(null); // Reset selected row when changing rows per page
+    setSelectedRow(null); 
   };
 
   const handleRowClick = (event, row) => {
@@ -85,7 +84,7 @@ function JournalTable() {
     <Grid container spacing={2} justifyContent="center">
       <Grid item xs={12} md={10} lg={8}>
         
-        {/* Information about Journals and Conferences */}
+        
         <Grid container spacing={3} sx={{ marginTop: "20px" }}>
           <Grid item xs={12} md={6}>
             <Typography variant="h6" gutterBottom sx={{ color: "#ffffff" }}>
@@ -167,7 +166,7 @@ function JournalTable() {
           offer a more dynamic and interactive environment with shorter papers
           and presentations.
         </Typography>
-        {/* Integrate JFilter component */}
+        
         <JFilter applyFilters={applyFilters} />
 
         <TableContainer component={Paper} className="table-container">
@@ -237,9 +236,9 @@ function JournalTable() {
           </Table>
         </TableContainer>
         <TablePagination
-          rowsPerPageOptions={[25, 50, 75, 100]} // Customize rows per page options
+          rowsPerPageOptions={[25, 50, 75, 100]} 
           component="div"
-          count={filteredData.length} // Total number of rows based on filtered data
+          count={filteredData.length} 
           rowsPerPage={rowsPerPage}
           page={page}
           onPageChange={handleChangePage}
@@ -247,7 +246,7 @@ function JournalTable() {
           sx={{ color: "#ffffff" }}
         />
 
-        {/* Popover for detailed view */}
+        
         <Popover
           open={open}
           anchorEl={anchorEl}
@@ -265,8 +264,8 @@ function JournalTable() {
             sx: {
               maxWidth: "75vw",
               maxHeight: "90vh",
-              width: "80%", // Adjust card width as needed
-              fontSize: "0.2rem", // Adjust font size for content
+              width: "80%", 
+              fontSize: "0.2rem", 
               overflow: "auto",
               p: 2,
               backgroundColor: "#bdd5fa",

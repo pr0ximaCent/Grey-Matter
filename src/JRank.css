@@ -1,14 +1,14 @@
 .JRank {
   background-color: #111827;
-  color: #ffffff; /* Text color for contrast */
-  height: 100%; /* Ensure full viewport height */
+  color: #ffffff; 
+  height: 100%; 
   padding: 20px;
-  font-family: Arial, sans-serif; /* Example font */
+  font-family: Arial, sans-serif; 
 }
 .separator-line {
   border: 0;
   height: 2px;
-  background: #121212; /* White color to match the text color */
-  margin: 20px 0; /* Adjust the margin as needed */
-  opacity: 0.7; /* Optional: adjust opacity for a subtle look */
+  background: #121212; 
+  margin: 20px 0;
+  opacity: 0.7; 
 }

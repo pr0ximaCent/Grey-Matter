@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import ButtonSvg from '../assets/svg/ButtonSvg'; // Adjust import path as per your project structure
+import ButtonSvg from '../assets/svg/ButtonSvg'; 
 
 const Button = ({ className, href, onClick, white, children }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const baseColor = white ? '#333333' : '#000000'; // Default text color
-  const hoverColor = '#FFFFFF'; // Bright yellow on hover
-
+  const baseColor = white ? '#333333' : '#000000'; 
+  const hoverColor = '#FFFFFF'; 
   const styles = {
     color: isHovered ? hoverColor : baseColor,
     transition: 'color 0.3s ease',

@@ -6,7 +6,7 @@ import { useRef } from "react";
 import Generating from "./Generating";
 
 const handleNavigate = () => {
-  window.location.href = "/wannabe-a-researcher"; // Replace with your actual URL
+  window.location.href = "/wannabe-a-researcher";
 };
 const Hero = () => {
   const parallaxRef = useRef(null);

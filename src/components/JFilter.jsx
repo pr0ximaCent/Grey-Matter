@@ -47,7 +47,7 @@ function JFilter({ applyFilters }) {
   return (
     <Box p={2} sx={{ marginTop: "30px", marginBottom: "20px" }}>
       <Grid container spacing={3} justifyContent="center">
-        {/* Subject Area */}
+        
         <Grid item xs={12} sm={6} md={3}>
           <FormControl
             fullWidth
@@ -79,7 +79,7 @@ function JFilter({ applyFilters }) {
                   sx: {
                     bgcolor: "#111833",
                     "& .MuiMenuItem-root": {
-                      color: "#ffffff", // Set the text color of menu items
+                      color: "#ffffff", 
                     },
                   },
                 },
@@ -112,7 +112,7 @@ function JFilter({ applyFilters }) {
               <MenuItem value="Medicine; Pharmacology, Toxicology and Pharmaceutics">
                 Medicine; Pharmacology, Toxicology and Pharmaceutics
               </MenuItem>
-              {/* Add more options as needed */}
+             
             </Select>
           </FormControl>
         </Grid>
@@ -149,7 +149,7 @@ function JFilter({ applyFilters }) {
                   sx: {
                     bgcolor: "#111833",
                     "& .MuiMenuItem-root": {
-                      color: "#ffffff", // Set the text color of menu items
+                      color: "#ffffff", 
                     },
                   },
                 },
@@ -192,7 +192,7 @@ function JFilter({ applyFilters }) {
                 Biochemistry (Q1); Medicine (miscellaneous) (Q1); Structural
                 Biology (Q1)
               </MenuItem>
-              {/* Add more options as needed */}
+              {/* we will tryto add later */}
             </Select>
           </FormControl>
         </Grid>
@@ -229,7 +229,7 @@ function JFilter({ applyFilters }) {
                   sx: {
                     bgcolor: "#111833",
                     "& .MuiMenuItem-root": {
-                      color: "#ffffff", // Set the text color of menu items
+                      color: "#ffffff", 
                     },
                   },
                 },
@@ -241,12 +241,12 @@ function JFilter({ applyFilters }) {
               <MenuItem value="Southern America">Southern America</MenuItem>
               <MenuItem value="Eastern Europe">Eastern Europe</MenuItem>
               <MenuItem value="Western Europe">Western Europe</MenuItem>
-              {/* Add more options as needed */}
+              
             </Select>
           </FormControl>
         </Grid>
 
-        {/* Type */}
+       
         <Grid item xs={12} sm={6} md={3}>
           <FormControl
             fullWidth
@@ -276,7 +276,7 @@ function JFilter({ applyFilters }) {
                   sx: {
                     bgcolor: "#111833",
                     "& .MuiMenuItem-root": {
-                      color: "#ffffff", // Set the text color of menu items
+                      color: "#ffffff", 
                     },
                   },
                 },
@@ -285,7 +285,7 @@ function JFilter({ applyFilters }) {
               <MenuItem value="All">All</MenuItem>
               <MenuItem value="journal">Journal</MenuItem>
               <MenuItem value="conference">Conference</MenuItem>
-              {/* Add more options as needed */}
+              {/* we will tryto add later */}
             </Select>
           </FormControl>
         </Grid>
@@ -399,8 +399,8 @@ function JFilter({ applyFilters }) {
             sx={{
               backgroundColor: "#2E53BA",
               color: "#ffffff",
-              textTransform: "capitalize", // Corrected to lowercase 'capitalize'
-              transition: "background-color 0.7s ease", // Adding transition for background-color
+              textTransform: "capitalize", 
+              transition: "background-color 0.7s ease", // transition for background-color
               "&:hover": {
                 backgroundColor: "#006102",
               },

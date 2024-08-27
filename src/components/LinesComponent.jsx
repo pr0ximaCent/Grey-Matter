@@ -35,8 +35,8 @@ const LinesComponent = () => {
         top: 0,
         left: '50%',
         background: 'rgba(255, 255, 255, 0.1)',
-        animation: 'drop 9s infinite', // Duration set to 4s
-        animationTimingFunction: 'ease-in-out', // Smooth the animation
+        animation: 'drop 9s infinite', 
+        animationTimingFunction: 'ease-in-out', 
       },
       lineAfter: {
         content: "''",
@@ -47,13 +47,13 @@ const LinesComponent = () => {
         top: '-50%',
         left: 0,
         background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 100%)',
-        opacity: 0, // Initially hidden
-        animation: 'drop 9s infinite', // Duration set to 4s, same as line
-        animationTimingFunction: 'ease-in-out', // Smooth the animation
+        opacity: 0, 
+        animation: 'drop 9s infinite', 
+        animationTimingFunction: 'ease-in-out',
       },
     };
   
-    const linesCount = 12; // Total number of meteors
+    const linesCount = 12; 
   
     return (
       <div style={styles.lines}>
@@ -65,12 +65,12 @@ const LinesComponent = () => {
               style={{ 
                 ...styles.line, 
                 marginLeft: `${(index - 5) * 10}%`, 
-                animationDelay: `${randomDelay}s`, // Random delay for each line
+                animationDelay: `${randomDelay}s`, 
               }}
             >
               <div style={{ 
                 ...styles.lineAfter, 
-                animationDelay: `${randomDelay}s`, // Sync tail delay with line
+                animationDelay: `${randomDelay}s`, 
               }} />
             </div>
           );

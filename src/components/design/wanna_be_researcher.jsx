@@ -93,7 +93,7 @@ function WannaBeResearcher() {
                 <div className="flex flex-col sm:flex-row items-center p-4 border-b">
                   <img
                     className="w-16 h-16 rounded-full mb-4 sm:mb-0 sm:mr-4"
-                    src={benefit.image} // Replace with the actual image URL if available
+                    src={benefit.image} 
                     alt={benefit.name}
                   />
                   <div className="text-center sm:text-left">

@@ -117,10 +117,10 @@ Moving forward, we plan to expand **Grey Matter** by including more features, su
 
 ## <a name="team-members">👥 Team Members</a>
 
-- **[Sabik Aftahee]([https://github.com/YourGitHubUsername](https://github.com/pr0ximaCent))**
-- **[Md. Refaj Hossan]([https://github.com/TeamMember2GitHubUsername](https://github.com/RJ-Hossan))**
-- **[Abu Md. Masbah Uddin]([https://github.com/TeamMember3GitHubUsername](https://github.com/ma5bah))**
-- **[Tofayel Ahmmed Babu]([https://github.com/TeamMember4GitHubUsername](https://github.com/5pace4))**
+- **[Sabik Aftahee](https://github.com/pr0ximaCent)**
+- **[Md. Refaj Hossan](https://github.com/RJ-Hossan)**
+- **[Abu Md. Masbah Uddin](https://github.com/ma5bah)**
+- **[Tofayel Ahmmed Babu](https://github.com/5pace4)**
 
 ## <a name="built-with">🛠️ Built With</a>
 

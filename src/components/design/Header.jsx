@@ -28,11 +28,11 @@ export const HamburgerMenu = () => {
         />
       </div>
 
-      {/* <Rings /> */}
+      
 
       <SideLines />
 
-      {/* <BackgroundCircles /> */}
+      
     </div>
   );
 };

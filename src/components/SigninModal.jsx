@@ -19,11 +19,11 @@ const SignInModal = ({ open, onClose }) => (
       modal: {
         borderRadius: '8px',
         boxShadow: '0px 0px 20px rgba(0.5, 0.5, 0.5, 0.5)',
-        backgroundColor: '#1a202c', // Dark background color
-        color: '#ffffff', // Text color
+        backgroundColor: '#1a202c', 
+        color: '#ffffff', 
         padding: '20px',
-        maxWidth: '600px', // Adjust maximum width as needed
-        maxHeight: '80vh', // Adjust maximum height as needed
+        maxWidth: '600px', 
+        maxHeight: '80vh',
       },
     }}
     overlayClassName="customOverlay"
@@ -43,10 +43,10 @@ const SignInModal = ({ open, onClose }) => (
       </span>
       <form className="space-y-6">
         {' '}
-        {/* Increased vertical spacing */}
+        
         <div className="relative mb-6">
           {' '}
-          {/* Increased margin-bottom */}
+          
           <FontAwesomeIcon
             icon={faEnvelope}
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -63,7 +63,7 @@ const SignInModal = ({ open, onClose }) => (
         </div>
         <div className="relative mb-6">
           {' '}
-          {/* Increased margin-bottom */}
+          
           <FontAwesomeIcon
             icon={faLock}
             className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"

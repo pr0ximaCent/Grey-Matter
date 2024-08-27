@@ -7,7 +7,7 @@ import "./JRank.css";
 import Header from "./components/Header.jsx";
 import { colors } from "@mui/material";
 
-// Example data, replace with your actual data source
+
 const data = [
 
   {
@@ -36,14 +36,14 @@ const data = [
     "Categories": "Hematology (Q1); Oncology (Q1)",
     "Areas": "Medicine"
   },
-  // Add more data objects as needed
+  
 ];
 
 function JRank() {
-  // State for filtered data
+ 
   const [filteredData, setFilteredData] = useState(data);
 
-  // Function to apply filters and update filteredData state
+ 
   const applyFilters = (filters) => {
     let filtered = data.filter(
       (item) =>
@@ -62,7 +62,6 @@ function JRank() {
     <div className="App">
       <Header />
       <JHeader />
-      {/* <JFilter applyFilters={applyFilters} /> */}
       <JournalTable data={filteredData} />
       <hr className="separator-line" />
       <Footer />

@@ -13,8 +13,8 @@ const Header = () => {
   const navigate = useNavigate();
   const [signupOpen, setSignupOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // State for mobile menu
-  const [overlayOpen, setOverlayOpen] = useState(false); // State for overlay
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
+  const [overlayOpen, setOverlayOpen] = useState(false); 
 
   useEffect(() => {
     if (location.hash) {
@@ -60,13 +60,13 @@ const Header = () => {
     } else {
       navigate("/");
     }
-    setMobileMenuOpen(false); // Close mobile menu when a link is clicked
-    setOverlayOpen(false); // Close overlay when a link is clicked
+    setMobileMenuOpen(false); 
+    setOverlayOpen(false); 
   };
 
   const handleMobileMenuToggle = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-    setOverlayOpen(!mobileMenuOpen); // Toggle overlay along with mobile menu
+    setOverlayOpen(!mobileMenuOpen); 
   };
 
   const handleOverlayClick = () => {
@@ -81,7 +81,7 @@ const Header = () => {
           <a
             className="block w-[10rem] lg:w-[12rem] xl:mr-8 cursor-pointer"
             href="/"
-            onClick={(e) => e.preventDefault()} // Prevent default action
+            onClick={(e) => e.preventDefault()} 
           >
             <div className="flex items-center" onClick={handleMobileMenuToggle}>
               <img
@@ -143,7 +143,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+     
       {overlayOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 z-40"
@@ -151,7 +151,7 @@ const Header = () => {
         />
       )}
 
-      {/* Mobile Menu */}
+     
       {mobileMenuOpen && (
         <nav className="fixed top-0 left-0 w-full h-full bg-n-8/90 backdrop-blur-sm z-50">
           <div className="flex flex-col items-center justify-center py-4 h-full">

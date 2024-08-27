@@ -5,7 +5,7 @@
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Snippets](#snippets)
-
+6. 🔗 [Data Sources](#data-sources)
 
 ## 🚨 Nota Bene
 
@@ -828,3 +828,13 @@ export default Roadmap;
 ```
 
 </details>
+
+<a name="data-sources">🔗 Data Sources</a>
+
+**Grey Matter** relies on data aggregated from various reputable sources to provide accurate and up-to-date information on researchers and academic journals. We would like to acknowledge and thank the following platforms for their valuable data:
+
+- **Site Name 1**: Provided data on researcher profiles, including their expertise, affiliations, and publication history.
+- **Site Name 2**: Supplied comprehensive information on academic journals, including impact factors, subject categories, and regional classifications.
+- **Site Name 3**: Offered insights into journals aligned with the United Nations' Sustainable Development Goals (SDGs).
+
+We deeply appreciate the contributions of these platforms, which play a crucial role in making **Grey Matter** a reliable resource for the academic community.

@@ -93,8 +93,7 @@ The idea behind **Grey Matter** was inspired by the need to bridge the gap betwe
   ![Data Integrity](./src/assets/collaboration/3.PNG)
   <div align="center"><em>Snippets of Journal Ranking Screen</em></div>
 
-
-## <a name="learn">🎓 What we learned</a>
+## 🎓 What we learned
 
 - The complexities involved in data integration and ensuring data consistency across multiple sources.
 - The hardships of creating a complex yet smooth functioning design integration.

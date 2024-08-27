@@ -125,8 +125,8 @@ Moving forward, we plan to expand **Grey Matter** by including more features, su
 ## <a name="team-members">👥 Team Members</a>
 
 - **[Sabik Aftahee](https://github.com/pr0ximaCent)**
-- **[Md. Refaj Hossan](https://github.com/RJ-Hossan)**
 - **[Abu Md. Masbah Uddin](https://github.com/ma5bah)**
+- **[Md. Refaj Hossan](https://github.com/RJ-Hossan)**
 - **[Tofayel Ahmmed Babu](https://github.com/5pace4)**
 
 ## <a name="built-with">🛠️ Built With</a>

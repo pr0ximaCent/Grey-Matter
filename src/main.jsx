@@ -6,6 +6,8 @@ import App from './App.jsx';
 import './index.css';
 import JRank from './JRank.jsx';
 import WannaBeResearcher from "./components/design/wanna_be_researcher.jsx";
+import PaperWriting from "./components/design/PaperWriting.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,10 @@ const router = createBrowserRouter([
   },    {
     path: "/wannabe-a-researcher",
     element: <WannaBeResearcher />
+  },
+  {
+    path: '/paper-writing',
+    element: <PaperWriting />,
   }
 ]);
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Grid, Typography } from "@mui/material";
 import "tailwindcss/tailwind.css";
 import Header from "../Header.jsx";

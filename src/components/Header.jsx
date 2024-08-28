@@ -61,7 +61,7 @@ const Header = () => {
                     if (element) {
                         element.scrollIntoView({ behavior: "smooth" });
                     }
-                }, 0); // Wait for the navigation to complete
+                }, 500); // Wait for the navigation to complete
             }
         } else if (url === "wannabe-a-researcher") {
             navigate("/wannabe-a-researcher");

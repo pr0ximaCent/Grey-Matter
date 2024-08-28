@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, Grid } from '@mui/material';
-import 'tailwindcss/tailwind.css'; // Ensure you import TailwindCSS
-
+import 'tailwindcss/tailwind.css'; 
 function JHeader() {
   return (
     <AppBar position="fixed" color="primary" sx={{ top: 0, backgroundColor: '#111827' }}>
@@ -50,7 +49,7 @@ function HomePage() {
               fontSize: { xs: '16px', md: '20px' },
               lineHeight: '1.6',
               paddingTop: '20px',
-              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for added depth
+              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' 
             }}
           >
             <p>
@@ -63,15 +62,15 @@ function HomePage() {
                   sx={{ 
                     color: "#ffffff", 
                     textAlign: "left", 
-                    padding: '20px', // Increased padding
-                    border: '2px solid #ffffff', // Thicker border
-                    borderRadius: '8px', // Rounded corners
-                    backgroundColor: '#1f2937', // Darker background for contrast
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Box shadow for depth
+                    padding: '20px',
+                    border: '2px solid #ffffff', 
+                    borderRadius: '8px', 
+                    backgroundColor: '#1f2937',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', 
                     height: '100%', 
-                    transition: 'transform 0.3s', // Smooth transition for hover effect
+                    transition: 'transform 0.3s', 
                     '&:hover': {
-                      transform: 'scale(1.02)' // Slight zoom effect on hover
+                      transform: 'scale(1.02)' 
                     }
                   }}
                 >
@@ -84,15 +83,15 @@ function HomePage() {
                   sx={{ 
                     color: "#ffffff", 
                     textAlign: "left", 
-                    padding: '20px', // Increased padding
-                    border: '2px solid #ffffff', // Thicker border
-                    borderRadius: '8px', // Rounded corners
-                    backgroundColor: '#1f2937', // Darker background for contrast
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Box shadow for depth
+                    padding: '20px', 
+                    border: '2px solid #ffffff', 
+                    borderRadius: '8px',
+                    backgroundColor: '#1f2937', 
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', 
                     height: '100%', 
-                    transition: 'transform 0.3s', // Smooth transition for hover effect
+                    transition: 'transform 0.3s', 
                     '&:hover': {
-                      transform: 'scale(1.02)' // Slight zoom effect on hover
+                      transform: 'scale(1.02)' 
                     }
                   }}
                 >
@@ -122,7 +121,7 @@ function HomePage() {
               src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
               alt={`Slide ${index + 1}`}
               className="w-full object-cover"
-              style={{ height: 'calc(100vh - 180px)' }} // Ensure images cover the height
+              style={{ height: 'calc(100vh - 180px)' }} 
             />
           ))}
         </div>

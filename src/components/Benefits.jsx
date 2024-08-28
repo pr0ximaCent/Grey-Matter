@@ -12,7 +12,7 @@ const Benefits = () => {
     const [scholarData, setScholarData] = useState([]);
     const [startIndex, setStartIndex] = useState(1);
 
-    
+    // eslint-disable-next-line no-unused-vars
     const [loading, setLoading] = useState(false);
     const page_containers_count = 6;
 
@@ -46,11 +46,33 @@ const Benefits = () => {
     useEffect(() => {
         fetchScholarData(startIndex);
         fetch(`${constant_data.backend_url}/get_all_scholar_fields`).then(response => response.json()).then(data => {
-           
-            setSubjectData(data);
+            let temp_data=[]
+            data.map((value,index)=>{
+                if(value.toString().includes("/")){
+                    let temp=value.split("/");
+                    temp.map((tvalue,index)=>{
+                        temp_data.push(tvalue.toString().trim());
+                    });
+                }
+                else temp_data.push(value);
+            });
+            const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
+            setSubjectData(uniqueElements);
         })
         fetch(`${constant_data.backend_url}/get_all_scholar_institutions`).then(response => response.json()).then(data => {
-          
+            let temp_data=[]
+            data.map((value,index)=>{
+                if(value.toString().includes(";")){
+                    let temp=value.split(";");
+                    temp.map((tvalue,index)=>{
+                        temp_data.push(tvalue.toString().trim());
+                    });
+                }
+                else temp_data.push(value);
+            });
+            const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
             setInstituteData(data)
         })
 
@@ -77,7 +99,18 @@ const Benefits = () => {
         setSelectedSubject(e.target.value);
     };
 
-  
+    // const filteredData = benefitData.filter((benefit) => {
+    //   const searchLower = searchTerm.toLowerCase();
+    //   return (
+    //     (benefit.name.toLowerCase().includes(searchLower) ||
+    //       benefit.institution.toLowerCase().includes(searchLower) ||
+    //       benefit.field.toLowerCase().includes(searchLower) ||
+    //       benefit.country.toLowerCase().includes(searchLower)) &&
+    //     (selectedInstitute === 'Institute' ||
+    //       benefit.institution === selectedInstitute) &&
+    //     (selectedSubject === 'Subject' || benefit.field.includes(selectedSubject))
+    //   );
+    // });
 
     return (
         <div className="container mx-auto p-4">
@@ -87,7 +120,7 @@ const Benefits = () => {
                 Bangladesh Scientists Rankings 2024
             </h2>
 
-           
+            {/* Filtering Options Row */}
             <div className="flex justify-center items-center mb-4 space-x-4">
                 <select
                     value={selectedInstitute}
@@ -111,7 +144,7 @@ const Benefits = () => {
                 </select>
             </div>
 
-            
+            {/* Search Bar Row */}
             <div className="flex justify-center items-center mb-6">
                 <input
                     type="text"
@@ -130,7 +163,7 @@ const Benefits = () => {
                                 <div className="flex items-center">
                                     <img
                                         className="w-16 h-16 rounded-full mr-4"
-                                        src={benefit.image} 
+                                        src={benefit.image} // Replace with the actual image URL if available
                                         alt={benefit.name}
                                     />
                                     <div className="">
@@ -203,6 +236,34 @@ const Benefits = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-sm text-gray-700 dark:text-gray-400">
+      Showing <span className="font-semibold text-gray-900 dark:text-white">{startIndex}</span> to <span
+                  className="font-semibold text-gray-900 dark:text-white">{startIndex + page_containers_count - 1}</span>
+  </span>
+                <div className="inline-flex mt-2 xs:mt-0">
+                    <button
+                        onClick={() => fetchScholarData(startIndex - page_containers_count)}
+                        className="flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-gray-800 rounded-s hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg className="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                  d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        Prev
+                    </button>
+                    <button
+                        onClick={() => fetchScholarData(startIndex + page_containers_count)}
+                        className="flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-gray-800 border-0 border-s border-gray-700 rounded-e hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        Next
+                        <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                  d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     );

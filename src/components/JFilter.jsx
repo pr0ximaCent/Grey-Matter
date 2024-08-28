@@ -1,431 +1,359 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import {useEffect, useState} from "react";
 import {
-  Box,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Button,
-  Grid,
-  TextField,
+    Box,
+    FormControl,
+    InputLabel,
+    Select,
+    MenuItem,
+    Button,
+    Grid,
+    TextField,
 } from "@mui/material";
+import constant_data from "../constants.js";
 
-function JFilter({ applyFilters }) {
-  const [filters, setFilters] = useState({
-    subjectArea: "All",
-    subjectCategory: "All",
-    region: "All",
-    type: "All",
-    sdg: "All",
-  });
+function JFilter({applyFilters ,filters, setFilters}) {
 
-  const [searchQuery, setSearchQuery] = useState("");
+    const handleApplyFilters = () => {
 
-  const handleApplyFilters = () => {
-    applyFilters({ ...filters, searchQuery });
-  };
+        applyFilters(filters);
+    };
 
-  const handleResetFilters = () => {
-    setFilters({
-      subjectArea: "All",
-      subjectCategory: "All",
-      region: "All",
-      type: "All",
-      sdg: "All",
-    });
-    setSearchQuery("");
-    applyFilters({
-      subjectArea: "All",
-      subjectCategory: "All",
-      region: "All",
-      type: "All",
-      sdg: "All",
-      searchQuery: "",
-    });
-  };
+    const handleResetFilters = () => {
+        setFilters({
+            subjectArea: "All",
+            subjectCategory: "All",
+            region: "All",
+            type: "All",
+            searchQuery: "",
+        });
+        applyFilters(filters);
+    };
 
-  return (
-    <Box p={2} sx={{ marginTop: "30px", marginBottom: "20px" }}>
-      <Grid container spacing={3} justifyContent="center">
-        
-        <Grid item xs={12} sm={6} md={3}>
-          <FormControl
-            fullWidth
-            variant="outlined"
-            size="small"
-            sx={{ minWidth: 120 }}
-          >
-            <InputLabel sx={{ color: "#ffffff", fontSize: "1.1rem" }}>
-              Subject Area
-            </InputLabel>
-            <Select
-              label="Subject Area"
-              value={filters.subjectArea}
-              onChange={(e) =>
-                setFilters({ ...filters, subjectArea: e.target.value })
-              }
-              sx={{
-                backgroundColor: "#111827",
-                color: "#ffffff",
-                border: "1px solid black",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#ffffff",
-                  },
-                },
-              }}
-              MenuProps={{
-                PaperProps: {
-                  sx: {
-                    bgcolor: "#111833",
-                    "& .MuiMenuItem-root": {
-                      color: "#ffffff", 
-                    },
-                  },
-                },
-              }}
-            >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="Medicine">Medicine</MenuItem>
-              <MenuItem value="Physics and Astronomy">
-                Physics and Astronomy
-              </MenuItem>
-              <MenuItem value="Biochemistry, Genetics and Molecular Biology">
-                Biochemistry, Genetics and Molecular Biology
-              </MenuItem>
-              <MenuItem value="Energy; Materials Science">
-                Energy; Materials Science
-              </MenuItem>
-              <MenuItem value="Business, Management and Accounting; Economics, Econometrics and Finance">
-                Business, Management and Accounting; Economics, Econometrics and
-                Finance
-              </MenuItem>
-              <MenuItem value="Economics, Econometrics and Finance">
-                Economics, Econometrics and Finance
-              </MenuItem>
-              <MenuItem value="Chemistry">Chemistry</MenuItem>
-              <MenuItem value="Biochemistry, Genetics and Molecular Biology; Chemical Engineering; Engineering; Immunology and Microbiology">
-                Biochemistry, Genetics and Molecular Biology; Chemical
-                Engineering; Engineering; Immunology and Microbiology
-              </MenuItem>
-              <MenuItem value="Multidisciplinary">Multidisciplinary</MenuItem>
-              <MenuItem value="Medicine; Pharmacology, Toxicology and Pharmaceutics">
-                Medicine; Pharmacology, Toxicology and Pharmaceutics
-              </MenuItem>
-             
-            </Select>
-          </FormControl>
-        </Grid>
 
-        {/* Subject Category */}
-        <Grid item xs={12} sm={6} md={3}>
-          <FormControl
-            fullWidth
-            variant="outlined"
-            size="small"
-            sx={{ minWidth: 120 }}
-          >
-            <InputLabel sx={{ color: "#ffffff", fontSize: "1.1rem" }}>
-              Subject Category
-            </InputLabel>
-            <Select
-              label="Subject Category"
-              value={filters.subjectCategory}
-              onChange={(e) =>
-                setFilters({ ...filters, subjectCategory: e.target.value })
-              }
-              sx={{
-                backgroundColor: "#111827",
-                color: "#ffffff",
-                border: "1px solid black",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#ffffff",
-                  },
-                },
-              }}
-              MenuProps={{
-                PaperProps: {
-                  sx: {
-                    bgcolor: "#111833",
-                    "& .MuiMenuItem-root": {
-                      color: "#ffffff", 
-                    },
-                  },
-                },
-              }}
-            >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="Hematology (Q1); Oncology (Q1)">
-                Hematology (Q1); Oncology (Q1)
-              </MenuItem>
-              <MenuItem value="Artificial Intelligence (Q1); Human-Computer Interaction (Q1); Software (Q1)">
-                Artificial Intelligence (Q1); Human-Computer Interaction (Q1);
-                Software (Q1)
-              </MenuItem>
-              <MenuItem value="Cell Biology (Q1); Molecular Biology (Q1)">
-                Cell Biology (Q1); Molecular Biology (Q1)
-              </MenuItem>
-              <MenuItem value="Economics and Econometrics (Q1)">
-                Economics and Econometrics (Q1)
-              </MenuItem>
-              <MenuItem value="Biochemistry, Genetics and Molecular Biology (miscellaneous) (Q1)">
-                Biochemistry, Genetics and Molecular Biology (miscellaneous)
-                (Q1)
-              </MenuItem>
-              <MenuItem value="Cancer Research (Q1); Oncology (Q1)">
-                Cancer Research (Q1); Oncology (Q1)
-              </MenuItem>
-              <MenuItem value="Drug Discovery (Q1); Medicine (miscellaneous) (Q1); Pharmacology (Q1)">
-                Drug Discovery (Q1); Medicine (miscellaneous) (Q1); Pharmacology
-                (Q1)
-              </MenuItem>
-              <MenuItem value="Biomaterials (Q1); Electronic, Optical and Magnetic Materials (Q1); Energy (miscellaneous) (Q1); Materials Chemistry (Q1); Surfaces, Coatings and Films (Q1)">
-                Biomaterials (Q1); Electronic, Optical and Magnetic Materials
-                (Q1); Energy (miscellaneous) (Q1); Materials Chemistry (Q1);
-                Surfaces, Coatings and Films (Q1)
-              </MenuItem>
-              <MenuItem value="Medicine (miscellaneous) (Q1)">
-                Medicine (miscellaneous) (Q1)
-              </MenuItem>
-              <MenuItem value="Biochemistry (Q1); Medicine (miscellaneous) (Q1); Structural Biology (Q1)">
-                Biochemistry (Q1); Medicine (miscellaneous) (Q1); Structural
-                Biology (Q1)
-              </MenuItem>
-              {/* we will tryto add later */}
-            </Select>
-          </FormControl>
-        </Grid>
+    const [countryList, setCountryList] = useState([]);
+    const [regionList, setRegionList] = useState([]);
+    const [publisherList, setPublisherList] = useState([]);
+    const [categoryList, setCategoryList] = useState([]);
+    const [areaList, setAreaList] = useState([]);
+    const [typeList, setTypeList] = useState([]);
+    useEffect(() => {
+        fetch(`${constant_data.backend_url}/get_all_journal_countries`).then(response => response.json()).then(data => {
+            setCountryList(data);
+        });
+        fetch(`${constant_data.backend_url}/get_all_journal_regions`).then(response => response.json()).then(data => {
+            setRegionList(data);
+        });
+        fetch(`${constant_data.backend_url}/get_all_journal_publishers`).then(response => response.json()).then(data => {
+            setPublisherList(data);
+        });
+        fetch(`${constant_data.backend_url}/get_all_journal_categories`).then(response => response.json()).then(data => {
+            let temp_data=[]
+            data.map((value,index)=>{
+                if(value.toString().includes(";")){
+                    let temp=value.split(";");
+                    temp.map((tvalue,index)=>{
+                        temp_data.push(tvalue.toString().trim());
+                    });
+                }
+                else temp_data.push(value);
+            });
+            const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
+            setCategoryList(uniqueElements);
+        });
+        fetch(`${constant_data.backend_url}/get_all_journal_areas`).then(response => response.json()).then(data => {
+            let temp_data=[]
+            data.map((value,index)=>{
+                if(value.toString().includes(";")){
+                    let temp=value.split(";");
+                    temp.map((tvalue,index)=>{
+                        temp_data.push(tvalue.toString().trim());
+                    });
+                }
+                else temp_data.push(value);
+            });
+            const uniqueElements =  [...new Set(temp_data)];
+            uniqueElements.sort()
+            setAreaList(uniqueElements);
+        });
+        fetch(`${constant_data.backend_url}/get_all_journal_types`).then(response => response.json()).then(data => {
+            setTypeList(data);
+        });
 
-        {/* Region */}
-        <Grid item xs={12} sm={6} md={3}>
-          <FormControl
-            fullWidth
-            variant="outlined"
-            size="small"
-            sx={{ minWidth: 120 }}
-          >
-            <InputLabel sx={{ color: "#ffffff", fontSize: "1.1rem" }}>
-              Region
-            </InputLabel>
-            <Select
-              label="Region"
-              value={filters.region}
-              onChange={(e) =>
-                setFilters({ ...filters, region: e.target.value })
-              }
-              sx={{
-                backgroundColor: "#111827",
-                color: "#ffffff",
-                border: "1px solid black",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#ffffff",
-                  },
-                },
-              }}
-              MenuProps={{
-                PaperProps: {
-                  sx: {
-                    bgcolor: "#111833",
-                    "& .MuiMenuItem-root": {
-                      color: "#ffffff", 
-                    },
-                  },
-                },
-              }}
-            >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="Asiatic Region">Asiatic Region</MenuItem>
-              <MenuItem value="Northern America">Northern America</MenuItem>
-              <MenuItem value="Southern America">Southern America</MenuItem>
-              <MenuItem value="Eastern Europe">Eastern Europe</MenuItem>
-              <MenuItem value="Western Europe">Western Europe</MenuItem>
-              
-            </Select>
-          </FormControl>
-        </Grid>
+    }, []);
 
-       
-        <Grid item xs={12} sm={6} md={3}>
-          <FormControl
-            fullWidth
-            variant="outlined"
-            size="small"
-            sx={{ minWidth: 120 }}
-          >
-            <InputLabel sx={{ color: "#ffffff", fontSize: "1.1rem" }}>
-              Type
-            </InputLabel>
-            <Select
-              label="Type"
-              value={filters.type}
-              onChange={(e) => setFilters({ ...filters, type: e.target.value })}
-              sx={{
-                backgroundColor: "#111827",
-                color: "#ffffff",
-                border: "1px solid black",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#ffffff",
-                  },
-                },
-              }}
-              MenuProps={{
-                PaperProps: {
-                  sx: {
-                    bgcolor: "#111833",
-                    "& .MuiMenuItem-root": {
-                      color: "#ffffff", 
-                    },
-                  },
-                },
-              }}
-            >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="journal">Journal</MenuItem>
-              <MenuItem value="conference">Conference</MenuItem>
-              {/* we will tryto add later */}
-            </Select>
-          </FormControl>
-        </Grid>
 
-        {/* SDG */}
-        <Grid item xs={12} sm={6} md={3}>
-          <FormControl
-            fullWidth
-            variant="outlined"
-            size="small"
-            sx={{ minWidth: 120 }}
-          >
-            <InputLabel sx={{ color: "#ffffff", fontSize: "1.1rem" }}>
-              SDG
-            </InputLabel>
-            <Select
-              label="SDG"
-              value={filters.sdg}
-              onChange={(e) => setFilters({ ...filters, sdg: e.target.value })}
-              sx={{
-                backgroundColor: "#111827",
-                color: "#ffffff",
-                border: "1px solid black",
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "#ffffff",
-                  },
-                },
-              }}
-              MenuProps={{
-                PaperProps: {
-                  sx: {
-                    bgcolor: "#111833",
-                    "& .MuiMenuItem-root": {
-                      color: "#ffffff",
-                    },
-                  },
-                },
-              }}
-            >
-              <MenuItem value="All">All</MenuItem>
-              <MenuItem value="35">35</MenuItem>
-              <MenuItem value="0">0</MenuItem>
-              <MenuItem value="20">20</MenuItem>
-              <MenuItem value="22">22</MenuItem>
-              <MenuItem value="59">59</MenuItem>
-              <MenuItem value="42">42</MenuItem>
-              <MenuItem value="17">17</MenuItem>
-              <MenuItem value="60">60</MenuItem>
-              <MenuItem value="46">46</MenuItem>
-              <MenuItem value="22">22</MenuItem>
-              <MenuItem value="130">130</MenuItem>
-              <MenuItem value="21">21</MenuItem>
-              <MenuItem value="37">37</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
+    return (
+        <Box p={2} sx={{marginTop: "30px", marginBottom: "20px"}}>
+            <Grid container spacing={3} justifyContent="center">
+                {/* Subject Area */}
+                <Grid item xs={12} sm={6} md={3}>
+                    <FormControl
+                        fullWidth
+                        variant="outlined"
+                        size="small"
+                        sx={{minWidth: 120}}
+                    >
+                        <InputLabel sx={{color: "#ffffff", fontSize: "1.1rem"}}>
+                            Subject Area
+                        </InputLabel>
+                        <Select
+                            label="Subject Area"
+                            value={filters.subjectArea}
+                            onChange={(e) =>
+                                setFilters({...filters, subjectArea: e.target.value})
+                            }
+                            sx={{
+                                backgroundColor: "#111827",
+                                color: "#ffffff",
+                                border: "1px solid black",
+                                "& .MuiOutlinedInput-root": {
+                                    "& fieldset": {
+                                        borderColor: "#ffffff",
+                                    },
+                                },
+                            }}
+                            MenuProps={{
+                                PaperProps: {
+                                    sx: {
+                                        bgcolor: "#111833",
+                                        "& .MuiMenuItem-root": {
+                                            color: "#ffffff", // Set the text color of menu items
+                                        },
+                                    },
+                                },
+                            }}
+                        >
+                            <MenuItem value="All">All</MenuItem>
+                            {areaList.map((area) => {
+                                return <MenuItem key={area.toString()} value={area}>{area}</MenuItem>;
+                            })}
+                        </Select>
+                    </FormControl>
+                </Grid>
 
-        {/* Search Bar */}
-        <Grid
-          item
-          xs={12}
-          container
-          justifyContent="center"
-          sx={{ marginTop: "10px" }}
-        >
-          <TextField
-            label="Search"
-            variant="outlined"
-            size="small"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            sx={{
-              minWidth: "100%",
-              backgroundColor: "#111827",
-              color: "#ffffff",
-              "& .MuiInputLabel-root": {
-                color: "#ffffff",
-              },
-              "& .MuiOutlinedInput-root": {
-                "& fieldset": {
-                  borderColor: "#ffffff",
-                },
-                "&:hover fieldset": {
-                  borderColor: "#ffffff",
-                },
-                "&.Mui-focused fieldset": {
-                  borderColor: "#ffffff",
-                },
-                "& input": {
-                  color: "#ffffff",
-                },
-              },
-            }}
-          />
-        </Grid>
+                {/* Subject Category */}
+                <Grid item xs={12} sm={6} md={3}>
+                    <FormControl
+                        fullWidth
+                        variant="outlined"
+                        size="small"
+                        sx={{minWidth: 120}}
+                    >
+                        <InputLabel sx={{color: "#ffffff", fontSize: "1.1rem"}}>
+                            Subject Category
+                        </InputLabel>
+                        <Select
+                            label="Subject Category"
+                            value={filters.subjectCategory}
+                            onChange={(e) =>
+                                setFilters({...filters, subjectCategory: e.target.value})
+                            }
+                            sx={{
+                                backgroundColor: "#111827",
+                                color: "#ffffff",
+                                border: "1px solid black",
+                                "& .MuiOutlinedInput-root": {
+                                    "& fieldset": {
+                                        borderColor: "#ffffff",
+                                    },
+                                },
+                            }}
+                            MenuProps={{
+                                PaperProps: {
+                                    sx: {
+                                        bgcolor: "#111833",
+                                        "& .MuiMenuItem-root": {
+                                            color: "#ffffff", // Set the text color of menu items
+                                        },
+                                    },
+                                },
+                            }}
+                        >
+                            <MenuItem value="All">All</MenuItem>
+                            {categoryList.map((category) => {
+                                return <MenuItem key={category.toString()} value={category}>{category}</MenuItem>;
+                            })}
 
-        {/* Apply and Reset Buttons */}
-        <Grid
-          item
-          xs={12}
-          container
-          justifyContent="center"
-          sx={{ marginTop: "10px" }}
-        >
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={handleApplyFilters}
-            size="large"
-            sx={{
-              backgroundColor: "#2E53BA",
-              color: "#ffffff",
-              textTransform: "capitalize", 
-              transition: "background-color 0.7s ease", // transition for background-color
-              "&:hover": {
-                backgroundColor: "#006102",
-              },
-            }}
-          >
-            Apply
-          </Button>
-          <Button
-            variant="contained"
-            onClick={handleResetFilters}
-            size="large"
-            sx={{
-              marginLeft: "10px",
-              backgroundColor: "#2E53BA",
-              color: "#ffffff",
-              textTransform: "Capitalize",
-              "&:hover": { backgroundColor: "#7C0000" },
-            }}
-          >
-            Reset
-          </Button>
-        </Grid>
-      </Grid>
-    </Box>
-  );
+                        </Select>
+                    </FormControl>
+                </Grid>
+
+                {/* Region */}
+                <Grid item xs={12} sm={6} md={3}>
+                    <FormControl
+                        fullWidth
+                        variant="outlined"
+                        size="small"
+                        sx={{minWidth: 120}}
+                    >
+                        <InputLabel sx={{color: "#ffffff", fontSize: "1.1rem"}}>
+                            Region
+                        </InputLabel>
+                        <Select
+                            label="Region"
+                            value={filters.region}
+                            onChange={(e) =>
+                                setFilters({...filters, region: e.target.value})
+                            }
+                            sx={{
+                                backgroundColor: "#111827",
+                                color: "#ffffff",
+                                border: "1px solid black",
+                                "& .MuiOutlinedInput-root": {
+                                    "& fieldset": {
+                                        borderColor: "#ffffff",
+                                    },
+                                },
+                            }}
+                            MenuProps={{
+                                PaperProps: {
+                                    sx: {
+                                        bgcolor: "#111833",
+                                        "& .MuiMenuItem-root": {
+                                            color: "#ffffff", // Set the text color of menu items
+                                        },
+                                    },
+                                },
+                            }}
+                        >
+                            <MenuItem value="All">All</MenuItem>
+                            {regionList.map((region) => {
+                                return <MenuItem key={region.toString()} value={region}>{region}</MenuItem>;
+                            })}
+                        </Select>
+                    </FormControl>
+                </Grid>
+
+                {/* Type */}
+                <Grid item xs={12} sm={6} md={3}>
+                    <FormControl
+                        fullWidth
+                        variant="outlined"
+                        size="small"
+                        sx={{minWidth: 120}}
+                    >
+                        <InputLabel sx={{color: "#ffffff", fontSize: "1.1rem"}}>
+                            Type
+                        </InputLabel>
+                        <Select
+                            label="Type"
+                            value={filters.type}
+                            onChange={(e) => setFilters({...filters, type: e.target.value})}
+                            sx={{
+                                backgroundColor: "#111827",
+                                color: "#ffffff",
+                                border: "1px solid black",
+                                "& .MuiOutlinedInput-root": {
+                                    "& fieldset": {
+                                        borderColor: "#ffffff",
+                                    },
+                                },
+                            }}
+                            MenuProps={{
+                                PaperProps: {
+                                    sx: {
+                                        bgcolor: "#111833",
+                                        "& .MuiMenuItem-root": {
+                                            color: "#ffffff", // Set the text color of menu items
+                                        },
+                                    },
+                                },
+                            }}
+                        >
+                            <MenuItem value="All">All</MenuItem>
+                            {typeList.map((type) => {
+                                return <MenuItem key={type.toString()} value={type}>{type}</MenuItem>;
+                            })}
+                            {/* Add more options as needed */}
+                        </Select>
+                    </FormControl>
+                </Grid>
+
+
+                {/* Search Bar */}
+                <Grid
+                    item
+                    xs={12}
+                    container
+                    justifyContent="center"
+                    sx={{marginTop: "10px"}}
+                >
+                    <TextField
+                        label="Search"
+                        variant="outlined"
+                        size="small"
+                        value={filters.searchQuery}
+                        onChange={(e) => setFilters({...filters, searchQuery: e.target.value})}
+                        sx={{
+                            minWidth: "100%",
+                            backgroundColor: "#111827",
+                            color: "#ffffff",
+                            "& .MuiInputLabel-root": {
+                                color: "#ffffff",
+                            },
+                            "& .MuiOutlinedInput-root": {
+                                "& fieldset": {
+                                    borderColor: "#ffffff",
+                                },
+                                "&:hover fieldset": {
+                                    borderColor: "#ffffff",
+                                },
+                                "&.Mui-focused fieldset": {
+                                    borderColor: "#ffffff",
+                                },
+                                "& input": {
+                                    color: "#ffffff",
+                                },
+                            },
+                        }}
+                    />
+                </Grid>
+
+                {/* Apply and Reset Buttons */}
+                <Grid
+                    item
+                    xs={12}
+                    container
+                    justifyContent="center"
+                    sx={{marginTop: "10px"}}
+                >
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        onClick={handleApplyFilters}
+                        size="large"
+                        sx={{
+                            backgroundColor: "#2E53BA",
+                            color: "#ffffff",
+                            textTransform: "capitalize", // Corrected to lowercase 'capitalize'
+                            transition: "background-color 0.7s ease", // Adding transition for background-color
+                            "&:hover": {
+                                backgroundColor: "#006102",
+                            },
+                        }}
+                    >
+                        Apply
+                    </Button>
+                    <Button
+                        variant="contained"
+                        onClick={handleResetFilters}
+                        size="large"
+                        sx={{
+                            marginLeft: "10px",
+                            backgroundColor: "#2E53BA",
+                            color: "#ffffff",
+                            textTransform: "Capitalize",
+                            "&:hover": {backgroundColor: "#7C0000"},
+                        }}
+                    >
+                        Reset
+                    </Button>
+                </Grid>
+            </Grid>
+        </Box>
+    );
 }
 
 export default JFilter;

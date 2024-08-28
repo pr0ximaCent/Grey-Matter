@@ -4,10 +4,6 @@ This repository contains the code corresponding to a collaborative project for H
 ![greymatter](https://github.com/user-attachments/assets/41675e3d-6211-45f9-a889-8f0d469fb2a2)
 
 
-
-![greymatter](https://github.com/user-attachments/assets/41675e3d-6211-45f9-a889-8f0d469fb2a2)
-
-
 ## 📋 <a name="table">Table of Contents</a>
 
 1. 🤖 [Introduction](#introduction)
@@ -97,7 +93,8 @@ The idea behind **Grey Matter** was inspired by the need to bridge the gap betwe
   ![Data Integrity](./src/assets/collaboration/3.PNG)
   <div align="center"><em>Snippets of Journal Ranking Screen</em></div>
 
-## 🎓 What we learned
+
+## <a name="learn">🎓 What we learned</a>
 
 - The complexities involved in data integration and ensuring data consistency across multiple sources.
 - The hardships of creating a complex yet smooth functioning design integration.

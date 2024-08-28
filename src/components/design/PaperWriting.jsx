@@ -1,74 +1,166 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import { AppBar, Toolbar, Typography, Grid } from '@mui/material';
+import 'tailwindcss/tailwind.css'; // Ensure you import TailwindCSS
 
-const Carousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [slideIdx, setSlideIdx] = useState([]);
+function JHeader() {
+  return (
+    <AppBar position="fixed" color="primary" sx={{ top: 0, backgroundColor: '#111827' }}>
+      <Toolbar>
+        <Typography variant="h4" sx={{ flexGrow: 1, textAlign: 'center', padding: '10px' }}>
+          Unlock the Secrets of Impactful Academic Writing
+        </Typography>
+      </Toolbar>
+    </AppBar>
+  );
+}
 
-    useEffect(() => {
-        const arr = [];
-        for (let i = 1; i <= 62; i++) {
-            arr.push(i);
-        }
-        setSlideIdx(arr);
-    }, []);
+function HomePage() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideIdx, setSlideIdx] = useState([]);
 
-    useEffect(() => {
-        const slideInterval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % slideIdx.length);
-        }, 3000); // Change slide every 3 seconds
+  useEffect(() => {
+    const arr = [];
+    for (let i = 1; i <= 62; i++) {
+      arr.push(i);
+    }
+    setSlideIdx(arr);
+  }, []);
 
-        return () => clearInterval(slideInterval);
-    }, [slideIdx.length]);
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slideIdx.length);
+    }, 3000); // Change slide every 3 seconds
 
-    return (
-        <div className="mx-auto relative w-full h-full xl:w-[1280px] overflow-hidden">
-            <div
-                className="flex transition-transform ease-out duration-500"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-                {slideIdx.map((slide, index) => (
-                    <img
-                        key={index}
-                        src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
-                        alt={`Slide ${index + 1}`}
-                        className="w-full object-cover"
-                    />
-                ))}
-            </div>
+    return () => clearInterval(slideInterval);
+  }, [slideIdx.length]);
 
-            <div className="absolute inset-0 flex justify-between items-center px-4">
-                <button
-                    onClick={() =>
-                        setCurrentIndex(
-                            (prevIndex) => (prevIndex - 1 + slideIdx.length) % slideIdx.length
-                        )
+  return (
+    <div>
+      <JHeader />
+
+      <Grid container spacing={2} justifyContent="center" sx={{ marginTop: '60px', padding: '0 20px' }}>
+        <Grid item xs={12} md={10} lg={8}>
+          <Typography 
+            variant="h5" 
+            gutterBottom 
+            sx={{ 
+              color: "#ffffff", 
+              textAlign: "center", 
+              margin: "10px 0", 
+              fontSize: { xs: '16px', md: '20px' },
+              lineHeight: '1.6',
+              paddingTop: '20px',
+              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' // Text shadow for added depth
+            }}
+          >
+            <p>
+              Dive deep into the essentials of crafting research papers with our comprehensive guide. Whether you're starting from scratch or looking to refine your skills, this workshop will equip you with the tools you need.
+            </p>
+            <Grid container spacing={2} justifyContent="center">
+              <Grid item xs={12} md={6}>
+                <Typography 
+                  variant="body1" 
+                  sx={{ 
+                    color: "#ffffff", 
+                    textAlign: "left", 
+                    padding: '20px', // Increased padding
+                    border: '2px solid #ffffff', // Thicker border
+                    borderRadius: '8px', // Rounded corners
+                    backgroundColor: '#1f2937', // Darker background for contrast
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Box shadow for depth
+                    height: '100%', 
+                    transition: 'transform 0.3s', // Smooth transition for hover effect
+                    '&:hover': {
+                      transform: 'scale(1.02)' // Slight zoom effect on hover
                     }
-                    className="bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-800"
+                  }}
                 >
-                    &#10094;
-                </button>
-                <button
-                    onClick={() =>
-                        setCurrentIndex((prevIndex) => (prevIndex + 1) % slideIdx.length)
+                  <strong>Master Key Aspect 1:</strong> From selecting a compelling topic to navigating the complexities of publication, gain expert guidance on every aspect of academic writing.
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography 
+                  variant="body1" 
+                  sx={{ 
+                    color: "#ffffff", 
+                    textAlign: "left", 
+                    padding: '20px', // Increased padding
+                    border: '2px solid #ffffff', // Thicker border
+                    borderRadius: '8px', // Rounded corners
+                    backgroundColor: '#1f2937', // Darker background for contrast
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Box shadow for depth
+                    height: '100%', 
+                    transition: 'transform 0.3s', // Smooth transition for hover effect
+                    '&:hover': {
+                      transform: 'scale(1.02)' // Slight zoom effect on hover
                     }
-                    className="bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-800"
+                  }}
                 >
-                    &#10095;
-                </button>
-            </div>
+                  <strong>Master Key Aspect 2:</strong> Practical strategies and insights to ensure your research stands out and makes a significant impact in the academic community.
+                </Typography>
+              </Grid>
+            </Grid>
+            <p>
+              Elevate your academic journey and turn your ideas into published work that resonates with the global research community.
+            </p>
+          </Typography>
+        </Grid>
+      </Grid>
 
-            <div className="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
-                {[...Array(10)].map((_, index) => (
-                    <div
-                        key={index}
-                        className={`w-3 h-3 rounded-full ${
-                            currentIndex % 10 === index ? "bg-white" : "bg-gray-500"
-                        }`}
-                    ></div>
-                ))}
-            </div>
+      {/* Slideshow Section */}
+      <div
+        className="mx-auto relative w-full h-full xl:w-[1280px] overflow-hidden"
+        style={{ backgroundColor: "#374151" }}
+      >
+        <div
+          className="flex transition-transform ease-out duration-500"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {slideIdx.map((slide, index) => (
+            <img
+              key={index}
+              src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
+              alt={`Slide ${index + 1}`}
+              className="w-full object-cover"
+              style={{ height: 'calc(100vh - 180px)' }} // Ensure images cover the height
+            />
+          ))}
         </div>
-    );
-};
 
-export default Carousel;
+        <div className="absolute inset-0 flex justify-between items-center px-4">
+          <button
+            onClick={() =>
+              setCurrentIndex(
+                (prevIndex) => (prevIndex - 1 + slideIdx.length) % slideIdx.length
+              )
+            }
+            className="bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-800"
+          >
+            &#10094;
+          </button>
+          <button
+            onClick={() =>
+              setCurrentIndex((prevIndex) => (prevIndex + 1) % slideIdx.length)
+            }
+            className="bg-gray-700 text-white p-2 rounded-full shadow-md hover:bg-gray-800"
+          >
+            &#10095;
+          </button>
+        </div>
+
+        <div className="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
+          {slideIdx.map((_, index) => (
+            <div
+              key={index}
+              className={`w-3 h-3 rounded-full ${
+                currentIndex % slideIdx.length === index ? "bg-white" : "bg-gray-500"
+              }`}
+            ></div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default HomePage;

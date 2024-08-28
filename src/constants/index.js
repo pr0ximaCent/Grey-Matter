@@ -37,6 +37,12 @@ export const navigation = [
   },
   {
     id: '3',
+    title: 'Paper Writing',
+    url: 'paper-writing',
+  },
+
+  {
+    id: '4',
     title: 'Top Researchers In BD',
     url: 'wannabe-a-researcher',
   },

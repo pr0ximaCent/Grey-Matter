@@ -45,7 +45,10 @@ const Header = () => {
     event.preventDefault();
     if (url === "journal-ranking") {
       navigate("/journal-ranking");
-    } else if (url === "#research-roadmap") {
+    }else if(url === "paper-writing"){
+      navigate("/paper-writing");
+    }
+     else if (url === "#research-roadmap") {
       const element = document.querySelector("#research-roadmap");
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });

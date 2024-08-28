@@ -87,7 +87,7 @@ const Header = () => {
     return (
         <div className="relative z-50">
             <div
-                className="fixed top-0 left-0 w-full border-b border-n-6 lg:bg-n-7/90 lg:backdrop-blur-sm bg-n-8/90 backdrop-blur-sm">
+                className="top-0 left-0 w-full border-b border-n-6 lg:bg-n-7/90 lg:backdrop-blur-sm bg-n-8/90 backdrop-blur-sm">
                 <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-4 lg:py-6">
                     <a
                         className="block w-[10rem] lg:w-[12rem] xl:mr-8 cursor-pointer"

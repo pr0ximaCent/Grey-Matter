@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prod_dev": "vite --mode production",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -20,7 +21,6 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^5.16.1",
     "@mui/material": "^5.16.1",
-    "flowbite": "^2.5.1",
     "install": "^0.13.0",
     "ldrs": "^1.0.2",
     "npm": "^10.8.2",

@@ -10,10 +10,10 @@ import FAQ from "./components/Faq"
 const App = () => {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <LinesComponent />
-        
+      <div className="overflow-hidden">
+
         <Header />
+        <LinesComponent />
         <Hero />
         <Benefits />
     

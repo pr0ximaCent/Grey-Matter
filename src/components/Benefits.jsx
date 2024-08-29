@@ -71,9 +71,10 @@ const Benefits = () => {
                 }
                 else temp_data.push(value);
             });
+
             const uniqueElements =  [...new Set(temp_data)];
             uniqueElements.sort()
-            setInstituteData(data)
+            setInstituteData(uniqueElements)
         })
 
     }, []);

@@ -43,7 +43,11 @@ function HomePage() {
         container
         spacing={2}
         justifyContent="center"
-        sx={{ marginTop: "20px", padding: "0 20px" }}
+        sx={{ 
+          marginTop: "20px", 
+          padding: "0 20px",
+          paddingBottom: "40px" // Added paddingBottom here
+        }}
       >
         <Grid item xs={12} md={10} lg={8}>
           <Typography

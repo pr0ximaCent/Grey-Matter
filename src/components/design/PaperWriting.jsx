@@ -43,10 +43,10 @@ function HomePage() {
         container
         spacing={2}
         justifyContent="center"
-        sx={{ 
-          marginTop: "20px", 
+        sx={{
+          marginTop: "20px",
           padding: "0 20px",
-          paddingBottom: "40px" // Added paddingBottom here
+          paddingBottom: "40px", // Added paddingBottom here
         }}
       >
         <Grid item xs={12} md={10} lg={8}>
@@ -127,24 +127,32 @@ function HomePage() {
 
       {/* Slideshow Section */}
       <div
-        className="mx-auto relative w-full h-full xl:w-[1280px] overflow-hidden"
+        className="mx-auto relative w-full xl:w-[1280px] overflow-hidden"
         style={{ backgroundColor: "#374151" }}
       >
         <div
           className="flex transition-transform ease-out duration-500"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          style={{
+            width: `${slideIdx.length * 100}%`,
+            transform: `translateX(-${currentIndex * (100 / slideIdx.length)}%)`,
+          }}
         >
           {slideIdx.map((slide, index) => (
-            <img
+            <div
               key={index}
-              src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
-              alt={`Slide ${index + 1}`}
-              className="w-full object-cover"
-              style={{
-                height: "calc(100vh - 180px)",
-                objectFit: "cover",
-              }}
-            />
+              className="flex-none w-full"
+              style={{ flexBasis: `${100 / slideIdx.length}%` }}
+            >
+              <img
+                src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
+                alt={`Slide ${index + 1}`}
+                className="w-full object-cover"
+                style={{
+                  height: "calc(100vh - 180px)",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           ))}
         </div>
 

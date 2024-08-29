@@ -26,7 +26,7 @@ function HomePage() {
   return (
     <div>
       <Header />
-      <div style={{ textAlign: "center"}}>
+      <div style={{ textAlign: "center" }}>
         <h2
           style={{
             color: "#ffffff",
@@ -136,7 +136,10 @@ function HomePage() {
               src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
               alt={`Slide ${index + 1}`}
               className="w-full object-cover"
-              style={{ height: "calc(100vh - 180px)" }}
+              style={{
+                height: "calc(100vh - 180px)",
+                objectFit: "cover",
+              }}
             />
           ))}
         </div>

@@ -26,7 +26,7 @@ function HomePage() {
   return (
     <div>
       <Header />
-      <div style={{ textAlign: "center"}}>
+      <div style={{ textAlign: "center" }}>
         <h2
           style={{
             color: "#ffffff",
@@ -43,7 +43,11 @@ function HomePage() {
         container
         spacing={2}
         justifyContent="center"
-        sx={{ marginTop: "20px", padding: "0 20px" }}
+        sx={{ 
+          marginTop: "20px", 
+          padding: "0 20px",
+          paddingBottom: "40px" // Added paddingBottom here
+        }}
       >
         <Grid item xs={12} md={10} lg={8}>
           <Typography
@@ -136,7 +140,10 @@ function HomePage() {
               src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
               alt={`Slide ${index + 1}`}
               className="w-full object-cover"
-              style={{ height: "calc(100vh - 180px)" }}
+              style={{
+                height: "calc(100vh - 180px)",
+                objectFit: "cover",
+              }}
             />
           ))}
         </div>

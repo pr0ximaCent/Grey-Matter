@@ -1,7 +1,20 @@
-import {useEffect, useState} from "react";
+import React, { useState, useEffect } from 'react';
+import { AppBar, Toolbar, Typography, Grid } from '@mui/material';
+import 'tailwindcss/tailwind.css';
 import Header from "../Header.jsx";
+function JHeader() {
+    return (
+        <AppBar position="relative" color="primary" sx={{ top: 0, backgroundColor: '#111827' }}>
+            <Toolbar>
+                <Typography variant="h4" sx={{ flexGrow: 1, textAlign: 'center', padding: '10px' }}>
+                    Unlock the Secrets of Impactful Academic Writing
+                </Typography>
+            </Toolbar>
+        </AppBar>
+    );
+}
 
-const Carousel = () => {
+function HomePage() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [slideIdx, setSlideIdx] = useState([]);
 
@@ -23,11 +36,85 @@ const Carousel = () => {
 
     return (
         <div>
-            <Header/>
-            <div className=" mx-auto relative w-full h-full xl:w-[1280px] overflow-hidden">
+            <Header />
+            <JHeader />
+            <Grid container spacing={2} justifyContent="center" sx={{ marginTop: '60px', padding: '0 20px' }}>
+                <Grid item xs={12} md={10} lg={8}>
+                    <Typography
+                        variant="h5"
+                        gutterBottom
+                        sx={{
+                            color: "#ffffff",
+                            textAlign: "center",
+                            margin: "10px 0",
+                            fontSize: { xs: '16px', md: '20px' },
+                            lineHeight: '1.6',
+                            paddingTop: '20px',
+                            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)'
+                        }}
+                    >
+                        <p>
+                            Dive deep into the essentials of crafting research papers with our comprehensive guide. Whether you're starting from scratch or looking to refine your skills, this workshop will equip you with the tools you need.
+                        </p>
+                        <Grid container spacing={2} justifyContent="center">
+                            <Grid item xs={12} md={6}>
+                                <Typography
+                                    variant="body1"
+                                    sx={{
+                                        color: "#ffffff",
+                                        textAlign: "left",
+                                        padding: '20px',
+                                        border: '2px solid #ffffff',
+                                        borderRadius: '8px',
+                                        backgroundColor: '#1f2937',
+                                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+                                        height: '100%',
+                                        transition: 'transform 0.3s',
+                                        '&:hover': {
+                                            transform: 'scale(1.02)'
+                                        }
+                                    }}
+                                >
+                                    <strong>Master Key Aspect 1:</strong> From selecting a compelling topic to navigating the complexities of publication, gain expert guidance on every aspect of academic writing.
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={12} md={6}>
+                                <Typography
+                                    variant="body1"
+                                    sx={{
+                                        color: "#ffffff",
+                                        textAlign: "left",
+                                        padding: '20px',
+                                        border: '2px solid #ffffff',
+                                        borderRadius: '8px',
+                                        backgroundColor: '#1f2937',
+                                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+                                        height: '100%',
+                                        transition: 'transform 0.3s',
+                                        '&:hover': {
+                                            transform: 'scale(1.02)'
+                                        }
+                                    }}
+                                >
+                                    <strong>Master Key Aspect 2:</strong> Practical strategies and insights to ensure your research stands out and makes a significant impact in the academic community.
+                                </Typography>
+                            </Grid>
+                        </Grid>
+                        <p>
+                            Elevate your academic journey and turn your ideas into published work that resonates with the global research community.
+                        </p>
+                    </Typography>
+                </Grid>
+            </Grid>
+
+            {/* Slideshow Section */}
+            <div
+                className="mx-auto relative w-full h-full xl:w-[1280px] overflow-hidden"
+                style={{ backgroundColor: "#374151" }}
+            >
                 <div
                     className="flex transition-transform ease-out duration-500"
-                    style={{transform: `translateX(-${currentIndex * 100}%)`}}
+                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
                     {slideIdx.map((slide, index) => (
                         <img
@@ -35,6 +122,7 @@ const Carousel = () => {
                             src={`/ResearchPaper/Paper Writing-Workshop_${slide}.jpg`}
                             alt={`Slide ${index + 1}`}
                             className="w-full object-cover"
+                            style={{ height: 'calc(100vh - 180px)' }}
                         />
                     ))}
                 </div>
@@ -61,11 +149,11 @@ const Carousel = () => {
                 </div>
 
                 <div className="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
-                    {[...Array(10)].map((_, index) => (
+                    {slideIdx.map((_, index) => (
                         <div
                             key={index}
                             className={`w-3 h-3 rounded-full ${
-                                currentIndex % 10 === index ? "bg-white" : "bg-gray-500"
+                                currentIndex % slideIdx.length === index ? "bg-white" : "bg-gray-500"
                             }`}
                         ></div>
                     ))}
@@ -73,6 +161,6 @@ const Carousel = () => {
             </div>
         </div>
     );
-};
+}
 
-export default Carousel;
+export default HomePage;

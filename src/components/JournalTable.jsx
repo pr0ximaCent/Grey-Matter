@@ -215,7 +215,6 @@ function JournalTable() {
                                 <TableCell>Cites / Doc (2 years)</TableCell>
                                 <TableCell>Ref. / Doc</TableCell>
                                 <TableCell>% Female</TableCell>
-                                <TableCell>Overton</TableCell>
                                 <TableCell>SDG</TableCell>
                                 <TableCell>Country</TableCell>
                                 <TableCell>Region</TableCell>
@@ -246,7 +245,6 @@ function JournalTable() {
                                         <TableCell>{row.citesPerDoc2Years}</TableCell>
                                         <TableCell>{row.refsPerDoc}</TableCell>
                                         <TableCell>{row.percentFemale}</TableCell>
-                                        <TableCell>{row.overton}</TableCell>
                                         <TableCell>{row.sdg}</TableCell>
                                         <TableCell>{row.country}</TableCell>
                                         <TableCell>{row.region}</TableCell>

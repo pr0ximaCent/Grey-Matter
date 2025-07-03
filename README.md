@@ -1,6 +1,6 @@
 This repository contains the code,corresponding to a collaborative project for Hackathon run by the HackCSB team in partnership with Coding Shikhbe Bangladesh, Bangladesh's fastest-growing AI-powered EdTech Platform <a href="https://hackcsb.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio" target="_blank"><b>[HackCSB]</b></a>. You can visit the corresponding website from this link <a href="https://grey-matter-omega.vercel.app/" target="_blank"><b>[Grey Matter]</b></a>.
 
-
+[![Project Description Video](https://img.youtube.com/vi/I9YNmsB8qlY/0.jpg)](https://www.youtube.com/watch?v=I9YNmsB8qlY)
 ![greymatter](https://github.com/user-attachments/assets/41675e3d-6211-45f9-a889-8f0d469fb2a2)
 
 
